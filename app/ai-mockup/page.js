@@ -4,14 +4,14 @@ import { useState } from 'react';
 
 const mockupsData = {
   coffee: {
-    title: 'ร้านกาแฟ',
+    title: 'Cafe',
     tagClass: 'bg-primary-fixed text-on-primary-fixed',
     icon: 'coffee',
-    concept: 'คาเฟ่โทนมินิมอล ใช้กระจกใส เพิ่มความโปร่งและดูทันสมัย เหมาะกับลูกค้าวัยทำงานและคนเดินผ่าน ตกแต่งภายในด้วยโทนสีขาวและไม้อ่อนเพื่อสร้างความผ่อนคลายและดูสะอาดตา',
+    concept: 'Minimalist style cafe with clear glass facade to increase spaciousness and modern feel. Suitable for working professionals and passersby. Styled with white tones and light oak wood to create a relaxing and clean atmosphere.',
     improvements: [
-      'เพิ่มเคาน์เตอร์หน้าร้าน',
-      'จัดระบบไฟและป้ายร้าน',
-      'ปรับพื้นที่นั่งและทางเดิน'
+      'Add storefront customer counter',
+      'Install custom ambient lighting and exterior signage',
+      'Optimize seating layout and interior walkways'
     ],
     images: {
       minimal: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD7E7TrciNbTTy0JL-kzXhNSv0Viaa9R_fwlsGqeMrbMdsxWDdV3cZr7mJbE0WhngseNgrd36UhviajVzG6BynPo5G8abq3ClPQYNLz_UWxha6P6O2vPpDiRorF9BdMi3Nx8oWi-A9ivUbGMAeUwB_k5eOA-zteqm7vAhl4j7yTYEkr4NLDh2aPS4gwOM4V7Ju5Vbo_Nc8k7jpcCsi4xGgCIWwdyJsQUSiS7uN1Z_OxR6MfULpM7GMvONasN4rxgN8S8YGus3eFMGY',
@@ -20,14 +20,14 @@ const mockupsData = {
     }
   },
   shabu: {
-    title: 'ชาบู',
+    title: 'Shabu',
     tagClass: 'bg-secondary-fixed text-on-secondary-fixed',
     icon: 'ramen_dining',
-    concept: 'ร้านชาบูตกแต่งแนวอบอุ่น เน้นที่นั่งรองรับครอบครัวและกลุ่มเพื่อน มีการระบายอากาศที่ดีเลิศ ตกแต่งด้วยไม้และโคมไฟโทนสีส้มอบอุ่นเพื่อเพิ่มความน่ารับประทาน',
+    concept: 'Warm-styled Shabu-Shabu restaurant focusing on spacious seating for families and groups of friends. Excellent ventilation layout. Outfitted with wood paneling and warm orange lighting to enhance the cozy dining experience.',
     improvements: [
-      'ติดตั้งระบบดูดควันและระบายอากาศเฉพาะจุด',
-      'ขยายกำลังไฟฟ้าเพื่อรองรับเตาแม่เหล็กไฟฟ้าหลายเตา',
-      'จัดวางโต๊ะใหญ่และเก้าอี้โซฟาพนักพิงสูง'
+      'Install local exhaust hoods and ventilation systems',
+      'Upgrade electrical capacity to support multiple induction cooktops',
+      'Arrange large dining tables and high-back sofa booths'
     ],
     images: {
       minimal: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBHDVKx43cQ2HxapNuLqn9uA4bTM7In_ZPAi33ohVTZH7IFk6Tu3ugz5RBjFlfXuQ6nH5l7ZOve0T6K-vgv2sVsTEMGx3YSe3jKd1qylmH-rScyixyOvcFr60Otx0FrE5AhlVkBkcIafrvcxMs5g6sZTcKGOZ08fPuYfKtTUNNz6UVoOdy4PBavBdH5GvSk7qoUTldiS7BSi7HMYC9sVMvj2wodt-8qJ7JT7TuVxqp5YDnyR0dc--FtRHO1EhLG5Uaih93DUfxiH9a8',
@@ -36,14 +36,14 @@ const mockupsData = {
     }
   },
   clinic: {
-    title: 'คลินิก',
+    title: 'Clinic',
     tagClass: 'bg-tertiary-fixed text-on-tertiary-fixed',
     icon: 'medical_services',
-    concept: 'คลินิกดีไซน์สะอาดตา เรียบง่ายและดูมีความน่าเชื่อถือสูง ใช้โทนสีสว่างและไฟส่องสว่างที่ถนอมสายตา มีการแบ่งสัดส่วนห้องตรวจและห้องพักคอยอย่างเหมาะสม',
+    concept: 'Clean, simple, and highly professional clinical design. Employs bright, eye-friendly ambient lighting. Properly partitions medical consultation rooms and comfortable patient waiting areas.',
     improvements: [
-      'กั้นผนังห้องตรวจแบบกันเสียงเพื่อความเป็นส่วนตัว',
-      'ติดตั้งจุดล้างมือระบบอัตโนมัติในห้องตรวจ',
-      'ทำทางลาดและประตูรองรับการใช้งานวีลแชร์'
+      'Install soundproof partition walls for patient privacy',
+      'Integrate automated handwashing stations in treatment areas',
+      'Build wheelchair access ramps and wider sliding entry doors'
     ],
     images: {
       minimal: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT',
@@ -52,14 +52,14 @@ const mockupsData = {
     }
   },
   clothing: {
-    title: 'เสื้อผ้า',
+    title: 'Clothing',
     tagClass: 'bg-primary-fixed text-on-primary-fixed',
     icon: 'checkroom',
-    concept: 'ร้านเสื้อผ้าบูติกดีไซน์ทันสมัย เน้นการจัดวางแสงไฟส่องสินค้าให้โดดเด่น มีกระจกเงาบานใหญ่และราวจับสแตนเลสขัดเงาเพื่อเสริมความพรีเมียมให้เสื้อผ้าจัดแสดง',
+    concept: 'Modern boutique clothing store design focusing on product accent lighting. Outfitted with full-length vanity mirrors and polished stainless steel racks to elevate the premium presentation of the apparel.',
     improvements: [
-      'กั้นห้องลองเสื้อผ้าพร้อมกระจกเงาบานใหญ่',
-      'ติดตั้งระบบไฟสปอตไลท์ส่องสว่างเน้นจุดโชว์สินค้า',
-      'ติดตั้งเคาน์เตอร์แคชเชียร์และระบบสต็อกหลังร้าน'
+      'Partition spacious fitting rooms equipped with full-length mirrors',
+      'Set up directional spotlight tracks to highlight signature displays',
+      'Establish checking/billing counters and backroom inventory storage'
     ],
     images: {
       minimal: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDA18uNTaNDk5tJ2O-QI5DbxeXfpa_4wM2R0K4FunQD-QmXe4YAfItmPS-MFOU3qoiDU7pRt7XmQhl1SnDEU4pIpRQB4__kOVeMW3C2viX1wpqrCSaoXGbEv9bRRHPEfCNMXuDB6w1Q6HsbKgOgLvYmECot_XsDvlGrthB3QL-yO-D5c5UpGjGIdJHV9M8VkHZuw_0QUpAIjgEvaHfGwrFi5IK_mlhl6Hu0QYS-JMDv8x2-_7yoRU_535krpii1tovnxrpvcGtMCrI-',
@@ -81,19 +81,19 @@ export default function AiMockup() {
     if (budget < 300000) {
       return {
         label: '฿100,000 - ฿300,000',
-        tag: 'งบประมาณประหยัด',
+        tag: 'Economy Budget',
         tagClass: 'bg-tertiary-fixed text-on-tertiary-fixed'
       };
     } else if (budget <= 600000) {
       return {
         label: '฿300,000 - ฿600,000',
-        tag: 'งบประมาณกลาง',
+        tag: 'Moderate Budget',
         tagClass: 'bg-secondary-fixed text-on-secondary-fixed'
       };
     } else {
       return {
         label: '฿600,000 - ฿1,000,000+',
-        tag: 'งบประมาณสูง',
+        tag: 'Premium Budget',
         tagClass: 'bg-primary-fixed text-on-primary-fixed'
       };
     }
@@ -115,19 +115,19 @@ export default function AiMockup() {
     <main className="max-w-[1280px] mx-auto px-margin-desktop py-stack-lg fade-in">
       {/* Header Section */}
       <div className="mb-12">
-        <h1 className="font-display-lg text-display-lg text-on-surface mb-2 font-bold">AI Mockup หน้าร้าน</h1>
-        <p className="font-body-lg text-body-lg text-on-surface-variant">จำลองหน้าร้านด้วย AI เพื่อดูแนวทางการตกแต่งก่อนตัดสินใจเช่า</p>
+        <h1 className="font-display-lg text-display-lg text-on-surface mb-2 font-bold">AI Storefront Mockup</h1>
+        <p className="font-body-lg text-body-lg text-on-surface-variant">Simulate storefront with AI to visualize interior/exterior design options before leasing.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
         {/* Left Column: Settings Card */}
         <aside className="lg:col-span-4">
           <div className="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-8 sticky top-24">
-            <h2 className="font-headline-md text-headline-md mb-8 text-slate-900 font-bold">ตั้งค่าการจำลอง</h2>
+            <h2 className="font-headline-md text-headline-md mb-8 text-slate-900 font-bold">Simulation Setup</h2>
             
             {/* Shop Type */}
             <div className="mb-8">
-              <label className="block font-label-md text-label-md mb-4 text-on-surface-variant">ประเภทร้าน</label>
+              <label className="block font-label-md text-label-md mb-4 text-on-surface-variant">Shop Type</label>
               <div className="grid grid-cols-2 gap-3">
                 <button 
                   onClick={() => setShopType('coffee')}
@@ -138,7 +138,7 @@ export default function AiMockup() {
                   }`}
                 >
                   <span className="material-symbols-outlined mb-2 text-2xl">coffee</span>
-                  <span className="font-label-sm text-label-sm">ร้านกาแฟ</span>
+                  <span className="font-label-sm text-label-sm">Cafe</span>
                 </button>
                 <button 
                   onClick={() => setShopType('shabu')}
@@ -149,7 +149,7 @@ export default function AiMockup() {
                   }`}
                 >
                   <span className="material-symbols-outlined mb-2 text-2xl">ramen_dining</span>
-                  <span className="font-label-sm text-label-sm">ชาบู</span>
+                  <span className="font-label-sm text-label-sm">Shabu</span>
                 </button>
                 <button 
                   onClick={() => setShopType('clinic')}
@@ -160,7 +160,7 @@ export default function AiMockup() {
                   }`}
                 >
                   <span className="material-symbols-outlined mb-2 text-2xl">medical_services</span>
-                  <span className="font-label-sm text-label-sm">คลินิก</span>
+                  <span className="font-label-sm text-label-sm">Clinic</span>
                 </button>
                 <button 
                   onClick={() => setShopType('clothing')}
@@ -171,7 +171,7 @@ export default function AiMockup() {
                   }`}
                 >
                   <span className="material-symbols-outlined mb-2 text-2xl">checkroom</span>
-                  <span className="font-label-sm text-label-sm">เสื้อผ้า</span>
+                  <span className="font-label-sm text-label-sm">Clothing</span>
                 </button>
               </div>
             </div>
@@ -283,7 +283,7 @@ export default function AiMockup() {
               {isGenerating ? (
                 <div className="w-full aspect-[4/5] bg-surface-container flex flex-col items-center justify-center gap-4 transition-all duration-300">
                   <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-                  <span className="text-body-md font-bold text-primary animate-pulse">AI กำลังตกแต่งร้านค้า...</span>
+                  <span className="text-body-md font-bold text-primary animate-pulse">AI is styling the space...</span>
                 </div>
               ) : (
                 showMockup && (
@@ -312,7 +312,7 @@ export default function AiMockup() {
             <div className="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant shadow-sm h-full">
               <div className="flex items-center gap-3 mb-4">
                 <span className="material-symbols-outlined text-primary text-2xl">build</span>
-                <h3 className="font-headline-md text-headline-md font-bold text-slate-900">สิ่งที่ต้องปรับปรุงก่อนเปิดร้าน</h3>
+                <h3 className="font-headline-md text-headline-md font-bold text-slate-900">Required Renovations</h3>
               </div>
               <ul className="space-y-3">
                 {currentData.improvements.map((improvement, index) => (
