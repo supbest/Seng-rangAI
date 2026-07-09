@@ -75,7 +75,7 @@ export default function ListingDetails() {
                 </div>
               </div>
               <div className="mt-4">
-                <span className="text-headline-lg font-headline-lg text-on-background font-bold">฿1,200,000</span>
+                <span className="text-headline-lg font-headline-lg text-on-background font-bold">฿1,800,000</span>
               </div>
               
               {/* Key Specs */}
@@ -304,6 +304,61 @@ export default function ListingDetails() {
                       View Recommended Business Types
                     </button>
                   </div>
+                </div>
+              </div>
+
+              {/* Broker Matching */}
+              <div className="border-b border-outline-variant pb-4 mb-2">
+                <h2 className="text-label-md font-bold mb-4 flex items-center gap-2 text-on-background">
+                  <span className="material-symbols-outlined text-primary text-[20px]">handshake</span>
+                  Broker Matching
+                  <span className="ml-auto flex items-center gap-1 bg-primary text-on-primary text-[10px] px-2 py-0.5 rounded-full font-bold">
+                    <span className="material-symbols-outlined text-[14px]">auto_awesome</span> AI MATCHED
+                  </span>
+                </h2>
+
+                <div className="bg-surface-container-low p-5 rounded-xl flex flex-col items-center gap-4 border border-primary/20">
+                  {/* Broker Avatar */}
+                  <img
+                    className="w-20 h-20 rounded-full object-cover border-[3px] border-primary/30 shadow-md"
+                    alt="Professional portrait of Kittiphat S."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+                  />
+
+                  {/* Broker Name & Badge */}
+                  <div className="flex flex-col items-center gap-1">
+                    <div className="flex items-center gap-1.5">
+                      <h4 className="text-body-lg font-bold text-on-background">Kittiphat S.</h4>
+                      <span className="material-symbols-outlined text-primary text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
+                    </div>
+                    <span className="bg-primary/10 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                      Top Closer – F&B Specialty
+                    </span>
+                  </div>
+
+                  {/* Stats Row */}
+                  <div className="flex items-center gap-6 w-full justify-center">
+                    <div className="flex flex-col items-center">
+                      <span className="text-title-md font-bold text-on-background">12</span>
+                      <span className="text-[10px] text-secondary uppercase tracking-wider">Deals Closed</span>
+                    </div>
+                    <div className="w-px h-8 bg-outline-variant/50"></div>
+                    <div className="flex flex-col items-center">
+                      <span className="text-title-md font-bold text-on-background">98%</span>
+                      <span className="text-[10px] text-secondary uppercase tracking-wider">Success Rate</span>
+                    </div>
+                  </div>
+
+                  {/* Expertise Summary */}
+                  <p className="text-label-sm text-secondary text-center leading-relaxed">
+                    Specialises in closing cafe and restaurant deals in the Ari district.
+                  </p>
+
+                  {/* CTA */}
+                  <button className="w-full bg-primary text-on-primary px-4 py-3 rounded-lg text-label-md font-bold hover:bg-primary-container transition-colors duration-200 flex items-center justify-center gap-2 shadow-md">
+                    <span className="material-symbols-outlined text-[18px]">chat</span>
+                    Contact Broker
+                  </button>
                 </div>
               </div>
 
