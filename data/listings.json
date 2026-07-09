@@ -33,6 +33,28 @@
       "href": "/listings/shabuSukhumvit"
     },
     {
+      "id": "clothingSamYan",
+      "title": "Clothing Store - Sam Yan mid town",
+      "location": "SamYan, SamYan, Bangkok",
+      "price": "฿3,100,000",
+      "badge": "Hot Deal",
+      "aiScore": "80%",
+      "tags": ["Ventilation Ready", "Family Zone", "5 Years Operation", "Street-Front"],
+      "image": "/mockups/clothing/clothing-eco-min.png",
+      "href": "/listings/clothingSamYan"
+    },
+    {
+      "id": "clinicSiam",
+      "title": "clinic - Siam square centre",
+      "location": "Pathum Wan, Bangkok",
+      "price": "฿4,100,000",
+      "badge": "Hot Deal",
+      "aiScore": "72%",
+      "tags": ["Ventilation Ready", "Premium Area", "Prime Location", "Street-Front"],
+      "image": "/mockups/clinic/clinic-pre-min.png",
+      "href": "/listings/clinicSiam"
+    },
+    {
       "id": "coffeeShopThonglor",
       "title": "Coffee Shop - Thonglor",
       "location": "Thonglor, Watthana, Bangkok",

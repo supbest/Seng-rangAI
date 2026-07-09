@@ -74,7 +74,7 @@ export default function AiMockup() {
             {/* Shop Type */}
             <div className="mb-8">
               <label className="block font-label-md text-label-md mb-4 text-on-surface-variant dark:text-slate-400">Shop Type</label>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-3 gap-3">
                 <button 
                   onClick={() => setShopType('coffee')}
                   className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
@@ -96,6 +96,28 @@ export default function AiMockup() {
                 >
                   <span className="material-symbols-outlined mb-2 text-2xl">ramen_dining</span>
                   <span className="font-label-sm text-label-sm">Shabu</span>
+                </button>
+                <button 
+                  onClick={() => setShopType('clothing')}
+                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                    shopType === 'clothing' 
+                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
+                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
+                  }`}
+                >
+                  <span className="material-symbols-outlined mb-2 text-2xl">checkroom</span>
+                  <span className="font-label-sm text-label-sm">Clothing</span>
+                </button>
+                <button 
+                  onClick={() => setShopType('clinic')}
+                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                    shopType === 'clinic' 
+                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
+                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
+                  }`}
+                >
+                  <span className="material-symbols-outlined mb-2 text-2xl">medical_services</span>
+                  <span className="font-label-sm text-label-sm">Clinic</span>
                 </button>
               </div>
             </div>
