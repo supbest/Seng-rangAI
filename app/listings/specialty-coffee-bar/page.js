@@ -537,7 +537,7 @@ export default function ListingDetails() {
                 )}
                 {card2Mockup === 'generated' && (
                   <div className="relative rounded-lg overflow-hidden border border-outline-variant fade-in">
-                    <img alt="Co-Working Space Transformation" className="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXu8vCi7bnyY9fv9prZtV36ctmWVtH9L4WFQmenhTKWsCrOAy7A7Llv4Vb6W_01AJ5PLV6BMIkwkN1oBfXD5vCTG0-pu942pDEgLroxWCIkIkHn0C-L4KcqwyFvNGcTSW-5pGJ95ArqWFEfuKYLeDozkwnR3_m4W095LeRkUvLazxfEIea70M4GqWvfPNJg_9SM6CZxpXK_RVFtwdnCKNGuFbOKXqubGAR_hpSB4Q2U8fyeNODMxgFkWSapQbWv0aT02idCI_dZLhkyY"/>
+                    <img alt="Co-Working Space Transformation" className="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8vCi7bnyY9fv9prZtV36ctmWVtH9L4WFQmenhTKWsCrOAy7A7Llv4Vb6W_01AJ5PLV6BMIkwkN1oBfXD5vCTG0-pu942pDEgLroxWCIkIkHn0C-L4KcqwyFvNGcTSW-5pGJ95ArqWFEfuKYLeDozkwnR3_m4W095LeRkUvLazxfEIea70M4GqWvfPNJg_9SM6CZxpXK_RVFtwdnCKNGuFbOKXqubGAR_hpSB4Q2U8fyeNODMxgFkWSapQbWv0aT02idCI_dZLhkyY"/>
                     <button 
                       onClick={() => handleGenerateMockup(2)}
                       className="absolute top-2 right-2 bg-on-surface/80 hover:bg-on-surface text-surface p-2 rounded-full shadow transition-colors flex items-center justify-center"
