@@ -1,0 +1,499 @@
+{
+  "heroCard": {
+    "title": "Ekkamai Storefront",
+    "location": "Sukhumvit 63, Bangkok",
+    "price": "฿45,000",
+    "priceUnit": "/ month",
+    "tags": ["Cafe", "Clinic"],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZsgujTSAY_Pkqy5myn5axPum9UO8KMrsJEfb3--gvmxsh0YL-7cP2UbAoGWqZtgEoLurITcOCGg_jpfeag23DQRB6RKpI48CLXZ_2a8yQO_Vo2YuBSjMe731Mn2NXUcTvaA9VovKB2qezPPLMkXTtZWFqCsjxJ7T1SuV7gqsU1AVh7SMSB8_fmY6Bm3rTzjmcptyYBlYf16iKtAyx0F8ED0pAgy7l_76nkdh0fSUdsEkpXJ4ScvP0OCk2G_Ncm-iM4Oaawlk5JCU",
+    "aiScore": 82,
+    "mockupImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCIB4b1U3iKvi5NUdd1CjSfPU1oFvsaETD6Us4JI8TpWZUAqWCc8YG70M3oa-pOhN3n5V-3vdCyYTqCYZVTd7y1k75W9JobKV9Nnez_9asW7T86I4WqHzXAB7r5_6k_VUeOUKdt49Ray9P33VkwjC5Ud45OoXWuGeFcUE1--Ov1vtnz8byEOn_XFCgI12YDo_XC8qHq5YGCIHKO1EzjhsEhVXIixHkSblS8MJQa4q-c-p9lFxZKFnnALHPT0NkvnA_PqwKa1lCsqjY"
+  },
+  "featuredListings": [
+    {
+      "id": "specialtyCoffeeBar",
+      "title": "Specialty Coffee Bar - Ari District",
+      "location": "Ari, Phaya Thai, Bangkok",
+      "price": "฿1,800,000",
+      "badge": "Premium Listing",
+      "aiScore": "92%",
+      "tags": ["Fully Equipped", "High Traffic", "3 Years Operation", "Corner Unit"],
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCAdzMU0vCfp4jQefFdi7z2UQ84Y9QjlW_4WI2y6PD0LKE0IO28Xa12vowQtul7Lqb1LI1TSfloXFGDLmh8CmBSKMvFjO9pSjNzf0QVphMJ0q34cycADmOGglGV1RXgQ8ZpBVDf4T3FswU75YGX9DEwUY3L4IhbUDllXd17IS0xeCyo-Gs5f9eCDjgG9JNfGG7vDt93-ZhWmuIeipqzar9TwdV3vdU0_K-uGYZsrpjNPo0UG0X64WIzjY_PSSanZ1KkfNnUGwv4gvw",
+      "href": "/listings/specialtyCoffeeBar"
+    },
+    {
+      "id": "shabuSukhumvit",
+      "title": "Shabu Restaurant - Sukhumvit Soi 39",
+      "location": "Sukhumvit, Watthana, Bangkok",
+      "price": "฿2,500,000",
+      "badge": "Hot Deal",
+      "aiScore": "88%",
+      "tags": ["Ventilation Ready", "Family Zone", "5 Years Operation", "Street-Front"],
+      "image": "/mockups/shabu/shabu_mod_lux.png",
+      "href": "/listings/shabuSukhumvit"
+    },
+    {
+      "id": "coffeeShopThonglor",
+      "title": "Coffee Shop - Thonglor",
+      "location": "Thonglor, Watthana, Bangkok",
+      "price": "฿3,200,000",
+      "badge": "Verified",
+      "aiScore": "85%",
+      "tags": ["License", "Premium Area", "Full Equipped", "Walk-in Traffic"],
+      "image": "/mockups/coffee/cafe_eco_lux.png",
+      "href": "/listings/coffeeShopThonglor"
+    },
+    {
+      "id": "mkSiamSquare",
+      "title": "MK Thai Hot Pot - Siam Square",
+      "location": "Pathum Wan, Bangkok",
+      "price": "฿1,200,000",
+      "badge": "New Listing",
+      "aiScore": "79%",
+      "tags": ["Prime Location", "Student Zone", "Fitting Rooms", "Display Ready"],
+      "image": "/mockups/shabu/shabu_pre_mod.png",
+      "href": "/listings/mkSiamSquare"
+    }
+  ],
+  "features": [
+    {
+      "icon": "analytics",
+      "title": "Score",
+      "description": "Storefront Score: Evaluate the readiness and reliability of rental spaces."
+    },
+    {
+      "icon": "target",
+      "title": "AI Match",
+      "description": "AI Match: Analyze which business types best suit the location."
+    },
+    {
+      "icon": "auto_awesome",
+      "title": "AI Mockup",
+      "description": "AI Mockup: Generate storefront previews to visualize your brand before renting."
+    }
+  ],
+  "listingDetail": {
+    "specialtyCoffeeBar": {
+      "title": "Business Takeover - Specialty Coffee Bar (Ari District)",
+      "location": "Ari District, Phaya Thai, Bangkok",
+      "price": "฿1,800,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Phasi Charoen", "href": "/" },
+        { "label": "Bang Wa", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "45", "unit": "sq.m." },
+        { "icon": "chair", "value": "20-25", "unit": "Seats" },
+        { "icon": "coffee_maker", "value": "Fully equipped", "unit": "Equipment" },
+        { "icon": "payments", "value": "฿35,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "350 m. (5 mins) from BTS Ari"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Coffee Shop Takeover" },
+        { "icon": "check_circle", "text": "Fully equipped and ready to open" },
+        { "icon": "history", "text": "Operating for 2 years" },
+        { "icon": "description", "text": "2 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 20 Oct 2024" },
+        { "icon": "tag", "text": "Listing ID - CS-88291" }
+      ],
+      "description": {
+        "heading": "Minimalist style coffee shop takeover with complete equipment, prime location in Ari",
+        "body": "Opportunity to own a Specialty Coffee shop in one of Bangkok's most bustling areas. The shop is decorated in a minimalist and warm style, ready to continue operations immediately. High-end equipment included, such as La Marzocco Linea PB 2 Groups espresso machine, Mahlkönig coffee grinder, cake display fridge, and complete furniture. The shop has a regular customer base and stable sales. Located in a soi surrounded by offices and condos, easy travel near BTS Ari."
+      },
+      "amenities": [
+        { "icon": "coffee_maker", "text": "Professional Espresso Machine" },
+        { "icon": "wifi", "text": "High-speed WiFi" },
+        { "icon": "deck", "text": "Outdoor Seating" },
+        { "icon": "videocam", "text": "CCTV & Security System" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Ari" },
+        { "key": "villa", "label": "La Villa Ari" },
+        { "key": "gump", "label": "Gump's Ari" },
+        { "key": "offices", "label": "Office Buildings" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿35,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿105,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿1,305,000",
+        "inclusions": [
+          "Lease rights and customer base",
+          "All coffee brewing and bakery equipment",
+          "Drink recipes and supplier contacts",
+          "Trained staff (if desired)"
+        ]
+      },
+      "gallery": [
+        {
+          "alt": "Cozy coffee shop interior",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn",
+          "main": true
+        },
+        {
+          "alt": "Professional espresso machine",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT"
+        },
+        {
+          "alt": "Modern cafe seating area",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDA18uNTaNDk5tJ2O-QI5DbxeXfpa_4wM2R0K4FunQD-QmXe4YAfItmPS-MFOU3qoiDU7pRt7XmQhl1SnDEU4pIpRQB4__kOVeMW3C2viX1wpqrCSaoXGbEv9bRRHPEfCNMXuDB6w1Q6HsbKgOgLvYmECot_XsDvlGrthB3QL-yO-D5c5UpGjGIdJHV9M8VkHZuw_0QUpAIjgEvaHfGwrFi5IK_mlhl6Hu0QYS-JMDv8x2-_7yoRU_535krpii1tovnxrpvcGtMCrI-"
+        },
+        {
+          "alt": "Cafe interior view",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn"
+        },
+        {
+          "alt": "Cafe seating",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDA18uNTaNDk5tJ2O-QI5DbxeXfpa_4wM2R0K4FunQD-QmXe4YAfItmPS-MFOU3qoiDU7pRt7XmQhl1SnDEU4pIpRQB4__kOVeMW3C2viX1wpqrCSaoXGbEv9bRRHPEfCNMXuDB6w1Q6HsbKgOgLvYmECot_XsDvlGrthB3QL-yO-D5c5UpGjGIdJHV9M8VkHZuw_0QUpAIjgEvaHfGwrFi5IK_mlhl6Hu0QYS-JMDv8x2-_7yoRU_535krpii1tovnxrpvcGtMCrI-",
+          "showViewAll": true
+        }
+      ],
+      "aiSummary": {
+        "score": 85,
+        "description": "This location is highly suitable for F&B businesses due to being in the Ari area with high purchasing power."
+      },
+      "broker": {
+        "name": "Kittiphat S.",
+        "badge": "Top Closer – F&B Specialty",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 12,
+        "successRate": "98%",
+        "expertise": "Specialises in closing cafe and restaurant deals in the Ari district."
+      },
+      "agent": {
+        "name": "Kanrutai Dawruang",
+        "company": "Plus Property",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "restaurant",
+          "type": "Restaurant Cafe",
+          "score": "8/10",
+          "suggestion": "Office location suitable for lunch sales, people have purchasing power, can use items from the old business.",
+          "mockupImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBHDVKx43cQ2HxapNuLqn9uA4bTM7In_ZPAi33ohVTZH7IFk6Tu3ugz5RBjFlfXuQ6nH5l7ZOve0T6K-vgv2sVsTEMGx3YSe3jKd1qylmH-rScyixyOvcFr60Otx0FrE5AhlVkBkcIafrvcxMs5g6sZTcKGOZ08fPuYfKtTUNNz6UVoOdy4PBavBdH5GvSk7qoUTldiS7BSi7HMYC9sVMvj2wodt-8qJ7JT7TuVxqp5YDnyR0dc--FtRHO1EhLG5Uaih93DUfxiH9a8"
+        },
+        {
+          "icon": "laptop_mac",
+          "type": "Co-Working Space",
+          "score": "7.5/10",
+          "suggestion": "Office location, few competitors, near a university, can use items from the old business.",
+          "mockupImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8vCi7bnyY9fv9prZtV36ctmWVtH9L4WFQmenhTKWsCrOAy7A7Llv4Vb6W_01AJ5PLV6BMIkwkN1oBfXD5vCTG0-pu942pDEgLroxWCIkIkHn0C-L4KcqwyFvNGcTSW-5pGJ95ArqWFEfuKYLeDozkwnR3_m4W095LeRkUvLazxfEIea70M4GqWvfPNJg_9SM6CZxpXK_RVFtwdnCKNGuFbOKXqubGAR_hpSB4Q2U8fyeNODMxgFkWSapQbWv0aT02idCI_dZLhkyY"
+        }
+      ],
+      "beforeImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCilXeMIkl7I2blSJtl0D1qPCDPj7SQeiSmMAAezmG8oqKtl5yTAcRj6Rg-xRqymTJ4UGFveuIZMv5tU6SLx3IhZQJ7KSGhfwvoeVx0GvFrj44nQSa3JEwuSWM_hHkdLTjMSm25vpgkK117x8VZNIkF7Aiu_SGppxcA5Zl6_oUnEvbvWNDqZewqHZK9iIlF4Mk1QGz1n5YBGyA0URt8fr2wVe9scSZuvdMv9MuFWJz2E_CygbRRUuMXbAbaExdLoUNVOPtpyLQNjMM"
+    },
+    "shabuSukhumvit": {
+      "title": "Business Takeover - Shabu Restaurant (Sukhumvit Soi 39)",
+      "location": "Sukhumvit, Watthana, Bangkok",
+      "price": "฿2,500,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Watthana", "href": "/" },
+        { "label": "Sukhumvit 39", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "120", "unit": "sq.m." },
+        { "icon": "chair", "value": "60-70", "unit": "Seats" },
+        { "icon": "ramen_dining", "value": "Induction ready", "unit": "Equipment" },
+        { "icon": "payments", "value": "฿65,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "200 m. (3 mins) from BTS Phrom Phong"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Shabu Restaurant Takeover" },
+        { "icon": "check_circle", "text": "Ventilation and exhaust system installed" },
+        { "icon": "history", "text": "Operating for 5 years" },
+        { "icon": "description", "text": "3 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 5 Nov 2024" },
+        { "icon": "tag", "text": "Listing ID - SB-45102" }
+      ],
+      "description": {
+        "heading": "Family-friendly Shabu restaurant with full kitchen and ventilation system on Sukhumvit Soi 39",
+        "body": "A well-established Shabu-Shabu restaurant located on one of Sukhumvit's busiest sois. The space features a complete commercial kitchen with 15 induction cooktop stations, industrial-grade exhaust and ventilation systems, and a walk-in freezer. The interior is decorated in a warm Japanese-inspired style with booth seating and private family rooms. Loyal customer base built over 5 years of continuous operation. Surrounded by condominiums, serviced apartments, and Japanese expat community."
+      },
+      "amenities": [
+        { "icon": "ramen_dining", "text": "15 Induction Cooktop Stations" },
+        { "icon": "ac_unit", "text": "Industrial Ventilation System" },
+        { "icon": "kitchen", "text": "Walk-in Freezer & Cold Storage" },
+        { "icon": "videocam", "text": "CCTV & Fire Safety System" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Phrom Phong" },
+        { "key": "emquartier", "label": "EmQuartier" },
+        { "key": "fuji", "label": "Fuji Super Market" },
+        { "key": "condos", "label": "Nearby Condos" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿65,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿195,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿2,760,000",
+        "inclusions": [
+          "Lease rights and existing customer base",
+          "All kitchen equipment and induction cooktops",
+          "Supplier contacts and recipes",
+          "Trained kitchen and service staff (if desired)"
+        ]
+      },
+      "gallery": [
+        { "alt": "Shabu restaurant dining area", "src": "/mockups/shabu/shabu_mod_lux.png", "main": true },
+        { "alt": "Induction cooktop station", "src": "/mockups/shabu/shabu_mod_mod.png" },
+        { "alt": "Restaurant interior", "src": "/mockups/shabu/shabu_mod_min.png" },
+        { "alt": "Private dining booth", "src": "/mockups/shabu/shabu_eco_lux.png" },
+        { "alt": "Kitchen area", "src": "/mockups/shabu/shabu_eco_mod.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 88,
+        "description": "This location is highly suitable for F&B dining businesses due to the Japanese expat community and high foot traffic near BTS Phrom Phong."
+      },
+      "broker": {
+        "name": "Natthapong W.",
+        "badge": "Top Closer – Restaurant Specialty",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 18,
+        "successRate": "95%",
+        "expertise": "Specialises in restaurant and dining space deals in the Sukhumvit area."
+      },
+      "agent": {
+        "name": "Siriporn Khaotam",
+        "company": "CBRE Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "ramen_dining",
+          "type": "Hot Pot & BBQ",
+          "score": "9/10",
+          "suggestion": "Japanese expat neighborhood with high demand for hot pot dining. Existing ventilation supports this perfectly.",
+          "mockupImage": "/mockups/shabu/shabu_pre_lux.png"
+        },
+        {
+          "icon": "restaurant",
+          "type": "Japanese Izakaya",
+          "score": "7/10",
+          "suggestion": "Strong Japanese community nearby. Could convert to evening izakaya concept with minimal changes.",
+          "mockupImage": "/mockups/shabu/shabu_pre_mod.png"
+        }
+      ],
+      "beforeImage": "/mockups/shabu/shabu_eco_min.png"
+    },
+    "coffeeShopThonglor": {
+      "title": "Business Takeover - Coffee Shop (Thonglor)",
+      "location": "Thonglor, Watthana, Bangkok",
+      "price": "฿3,200,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Watthana", "href": "/" },
+        { "label": "Thonglor", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "65", "unit": "sq.m." },
+        { "icon": "chair", "value": "30-35", "unit": "Seats" },
+        { "icon": "coffee_maker", "value": "Fully equipped", "unit": "Equipment" },
+        { "icon": "payments", "value": "฿55,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "400 m. (6 mins) from BTS Thong Lo"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Coffee Shop Takeover" },
+        { "icon": "check_circle", "text": "Fully licensed and ready to open" },
+        { "icon": "history", "text": "Operating for 3 years" },
+        { "icon": "description", "text": "4 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 12 Dec 2024" },
+        { "icon": "tag", "text": "Listing ID - CF-73054" }
+      ],
+      "description": {
+        "heading": "Premium coffee shop in Thonglor with established brand and loyal customer base",
+        "body": "Take over a thriving premium coffee shop in the heart of Thonglor, Bangkok's trendiest neighborhood. The space features a modern industrial-chic interior with imported Italian espresso machines, a full bakery kitchen, and Instagram-worthy decor. The shop has built a strong social media presence with over 15,000 followers. Located on a high-visibility corner with excellent walk-in traffic from nearby luxury condominiums and creative offices."
+      },
+      "amenities": [
+        { "icon": "coffee_maker", "text": "Italian Espresso Machine (La Cimbali)" },
+        { "icon": "wifi", "text": "Fiber Optic WiFi" },
+        { "icon": "bakery_dining", "text": "Full Bakery Kitchen" },
+        { "icon": "videocam", "text": "CCTV & Alarm System" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Thong Lo" },
+        { "key": "eight", "label": "Eight Thonglor" },
+        { "key": "javenue", "label": "J Avenue" },
+        { "key": "condos", "label": "Luxury Condos" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿55,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿165,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿3,420,000",
+        "inclusions": [
+          "Lease rights and brand name transfer",
+          "All coffee and bakery equipment",
+          "Social media accounts (15K+ followers)",
+          "Trained barista staff (if desired)"
+        ]
+      },
+      "gallery": [
+        { "alt": "Coffee shop exterior", "src": "/mockups/coffee/cafe_eco_lux.png", "main": true },
+        { "alt": "Barista station", "src": "/mockups/coffee/cafe_eco_mod.png" },
+        { "alt": "Seating area", "src": "/mockups/coffee/cafe_eco_min.png" },
+        { "alt": "Bakery display", "src": "/mockups/coffee/cafe_mod_lux.png" },
+        { "alt": "Interior design", "src": "/mockups/coffee/cafe_mod_mod.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 85,
+        "description": "Premium location in Thonglor with high purchasing power demographic. Ideal for upscale F&B and lifestyle businesses."
+      },
+      "broker": {
+        "name": "Pimchanok T.",
+        "badge": "Top Closer – Lifestyle & Cafe",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 9,
+        "successRate": "96%",
+        "expertise": "Specialises in lifestyle cafe and boutique space deals in the Thonglor-Ekkamai area."
+      },
+      "agent": {
+        "name": "Warinthon Suksai",
+        "company": "Colliers Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "coffee",
+          "type": "Premium Cafe & Brunch",
+          "score": "9/10",
+          "suggestion": "Thonglor demographic loves brunch culture. Existing equipment and brand are perfectly suited.",
+          "mockupImage": "/mockups/coffee/cafe_pre_lux.png"
+        },
+        {
+          "icon": "local_bar",
+          "type": "Wine Bar & Bistro",
+          "score": "7.5/10",
+          "suggestion": "Evening economy is strong in Thonglor. Could add wine bar concept to complement daytime cafe.",
+          "mockupImage": "/mockups/coffee/cafe_pre_mod.png"
+        }
+      ],
+      "beforeImage": "/mockups/coffee/cafe_eco_min.png"
+    },
+    "mkSiamSquare": {
+      "title": "Business Takeover - MK Thai Hot Pot (Siam Square)",
+      "location": "Pathum Wan, Bangkok",
+      "price": "฿1,200,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Pathum Wan", "href": "/" },
+        { "label": "Siam Square", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "80", "unit": "sq.m." },
+        { "icon": "chair", "value": "40-50", "unit": "Seats" },
+        { "icon": "ramen_dining", "value": "Full kitchen", "unit": "Equipment" },
+        { "icon": "payments", "value": "฿45,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "150 m. (2 mins) from BTS Siam"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Hot Pot Restaurant Takeover" },
+        { "icon": "check_circle", "text": "Full kitchen setup ready to operate" },
+        { "icon": "history", "text": "Operating for 1 year" },
+        { "icon": "description", "text": "2 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 3 Jan 2025" },
+        { "icon": "tag", "text": "Listing ID - MK-61287" }
+      ],
+      "description": {
+        "heading": "Thai hot pot restaurant in the heart of Siam Square, surrounded by students and shoppers",
+        "body": "A prime opportunity to take over a Thai-style hot pot restaurant in Siam Square, one of Bangkok's most iconic shopping and entertainment districts. The space is located on the 2nd floor with high visibility from the main walkway. Fully equipped kitchen with 12 hot pot stations, industrial ventilation, and a cold storage room. The location benefits from massive foot traffic from Chulalongkorn University students, Siam Paragon shoppers, and tourists. Affordable takeover price makes this ideal for first-time business owners."
+      },
+      "amenities": [
+        { "icon": "ramen_dining", "text": "12 Hot Pot Stations" },
+        { "icon": "ac_unit", "text": "Central Air Conditioning" },
+        { "icon": "kitchen", "text": "Cold Storage Room" },
+        { "icon": "wifi", "text": "Free WiFi for Customers" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Siam" },
+        { "key": "paragon", "label": "Siam Paragon" },
+        { "key": "chula", "label": "Chulalongkorn University" },
+        { "key": "mbk", "label": "MBK Center" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿45,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿135,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿1,380,000",
+        "inclusions": [
+          "Lease rights in Siam Square",
+          "All kitchen equipment and hot pot stations",
+          "Existing supplier network",
+          "Trained staff (if desired)"
+        ]
+      },
+      "gallery": [
+        { "alt": "Hot pot restaurant interior", "src": "/mockups/shabu/shabu_pre_mod.png", "main": true },
+        { "alt": "Hot pot cooking station", "src": "/mockups/shabu/shabu_pre_min.png" },
+        { "alt": "Restaurant seating", "src": "/mockups/shabu/shabu_pre_lux.png" },
+        { "alt": "Kitchen area", "src": "/mockups/shabu/shabu_eco_lux.png" },
+        { "alt": "Exterior view", "src": "/mockups/shabu/shabu_eco_mod.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 79,
+        "description": "Prime location near BTS Siam with massive student and tourist foot traffic. Ideal for affordable dining concepts."
+      },
+      "broker": {
+        "name": "Thanawat R.",
+        "badge": "Rising Star – Commercial Dining",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 6,
+        "successRate": "92%",
+        "expertise": "Specialises in student-zone and high-traffic dining space deals near Siam and Chula."
+      },
+      "agent": {
+        "name": "Pitchaya Mongkol",
+        "company": "JLL Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "ramen_dining",
+          "type": "Student-Friendly Hot Pot",
+          "score": "8.5/10",
+          "suggestion": "Massive student population from Chulalongkorn. Affordable hot pot buffet concept would thrive here.",
+          "mockupImage": "/mockups/shabu/shabu_mod_lux.png"
+        },
+        {
+          "icon": "fastfood",
+          "type": "Quick-Service Restaurant",
+          "score": "7/10",
+          "suggestion": "High foot traffic area ideal for fast casual dining. Quick turnaround attracts lunch rush crowds.",
+          "mockupImage": "/mockups/shabu/shabu_mod_mod.png"
+        }
+      ],
+      "beforeImage": "/mockups/shabu/shabu_eco_min.png"
+    }
+  }
+}
+

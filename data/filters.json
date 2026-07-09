@@ -1,0 +1,5 @@
+{
+  "locations": ["Sukhumvit", "Asok", "Ari"],
+  "businessTypes": ["Cafe", "Clinic", "Restaurant"],
+  "budgets": ["10,000 - 30,000", "30,000 - 50,000", "50,000+"]
+}
