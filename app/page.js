@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import ListingCard from '../components/ListingCard';
 import filtersData from '../data/filters.json';
 import listingsData from '../data/listings.json';
 import { requestStorefrontSearch } from '../lib/storefrontSearchClient';
@@ -46,7 +47,6 @@ export default function Home() {
         businessType,
         budget,
       });
-
 
       setSearchResults(data.listings);
       setSearchNotice(data.fallback ? data.message : '');
@@ -241,51 +241,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
             {featuredListings.map((listing) => (
-              <div key={listing.id} className="group bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800/80 overflow-hidden hover:shadow-2xl dark:hover:shadow-none transition-all">
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={listing.image}/>
-                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm">{listing.badge}</div>
-                  <div className="absolute top-4 right-4 bg-white/90 dark:bg-slate-950/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                    <div className="flex items-center gap-1">
-                      <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">AI Score</span>
-                      <span className="text-xs font-bold text-primary">{listing.aiScore}</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-headline-md text-xl font-bold text-slate-900 dark:text-white">{listing.title}</h3>
-                  </div>
-                  <div className="flex items-center gap-1 text-slate-400 dark:text-slate-500 text-sm mb-4">
-                    <span className="material-symbols-outlined text-sm">location_on</span>
-                    {listing.location}
-                  </div>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {listing.tags.map((tag) => (
-                      <span key={tag} className="bg-slate-100 dark:bg-slate-900 px-3 py-1 rounded-full text-[10px] text-slate-600 dark:text-slate-400">{tag}</span>
-                    ))}
-                  </div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-bold text-primary text-2xl">{listing.price}</span>
-                  </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-900">
-                    <div className="flex gap-4">
-                      <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors">
-                        <span className="material-symbols-outlined">favorite</span>
-                      </button>
-                      <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors">
-                        <span className="material-symbols-outlined">share</span>
-                      </button>
-                    </div>
-                    <Link 
-                      href={listing.href} 
-                      className="bg-primary text-white px-6 py-2 rounded-lg text-sm font-label-md hover:brightness-110 transition-all text-center"
-                    >
-                      View Details
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <ListingCard key={listing.id} listing={listing} />
             ))}
           </div>
         </div>
@@ -354,50 +310,12 @@ export default function Home() {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-gutter">
                   {searchResults.map((listing) => (
-                    <div key={listing.id} className="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800/80 overflow-hidden hover:shadow-2xl dark:hover:shadow-none transition-all">
-                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
-                        <img alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={listing.image}/>
-                        <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm">{listing.badge}</div>
-                        <div className="absolute top-4 right-4 bg-white/90 dark:bg-slate-950/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                          <div className="flex items-center gap-1">
-                            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">AI Score</span>
-                            <span className="text-xs font-bold text-primary">{listing.aiScore}</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <h3 className="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">{listing.title}</h3>
-                        <div className="flex items-center gap-1 text-slate-400 dark:text-slate-500 text-sm mb-4">
-                          <span className="material-symbols-outlined text-sm">location_on</span>
-                          {listing.location}
-                        </div>
-                        <div className="flex flex-wrap gap-2 mb-6">
-                          {listing.tags.map((tag) => (
-                            <span key={tag} className="bg-slate-100 dark:bg-slate-950 px-3 py-1 rounded-full text-[10px] text-slate-600 dark:text-slate-400">{tag}</span>
-                          ))}
-                        </div>
-                        <div className="flex items-center justify-between mb-4">
-                          <span className="font-bold text-primary text-2xl">{listing.price}</span>
-                        </div>
-                        <div className="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-800">
-                          <div className="flex gap-4">
-                            <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" type="button">
-                              <span className="material-symbols-outlined">favorite</span>
-                            </button>
-                            <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" type="button">
-                              <span className="material-symbols-outlined">share</span>
-                            </button>
-                          </div>
-                          <Link 
-                            href={listing.href} 
-                            className="bg-primary text-white px-6 py-2 rounded-lg text-sm font-label-md hover:brightness-110 transition-all text-center"
-                            onClick={closeSearchModal}
-                          >
-                            View Details
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
+                    <ListingCard
+                      key={listing.id}
+                      listing={listing}
+                      variant="elevated"
+                      onDetailsClick={closeSearchModal}
+                    />
                   ))}
                 </div>
               )}

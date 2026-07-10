@@ -4,6 +4,61 @@ import { useState } from 'react';
 
 import mockupsData from '../../data/mockups.json';
 
+const SHOP_TYPES = [
+  { key: 'coffee', label: 'Cafe', icon: 'coffee' },
+  { key: 'shabu', label: 'Shabu', icon: 'ramen_dining' },
+  { key: 'clothing', label: 'Clothing', icon: 'checkroom' },
+  { key: 'clinic', label: 'Clinic', icon: 'medical_services' },
+  { key: 'milk-tea', label: 'Milk Tea', icon: 'local_drink' },
+];
+
+const SHOP_STYLES = [
+  { key: 'minimal', label: 'Minimal', icon: 'remove_circle_outline' },
+  { key: 'modern', label: 'Modern', icon: 'apartment' },
+  { key: 'luxury', label: 'Luxury', icon: 'auto_awesome' },
+];
+
+const BUDGET_RANGES = [
+  {
+    isActive: (budget) => budget < 300000,
+    label: '฿100,000 - ฿300,000',
+    tag: 'Economy Budget',
+    tier: 'economy',
+    tagClass: 'bg-tertiary-fixed text-on-tertiary-fixed dark:bg-slate-800 dark:text-slate-200',
+  },
+  {
+    isActive: (budget) => budget <= 600000,
+    label: '฿300,000 - ฿600,000',
+    tag: 'Moderate Budget',
+    tier: 'moderate',
+    tagClass: 'bg-secondary-fixed text-on-secondary-fixed dark:bg-slate-800 dark:text-slate-200',
+  },
+  {
+    isActive: () => true,
+    label: '฿600,000 - ฿1,000,000+',
+    tag: 'Premium Budget',
+    tier: 'premium',
+    tagClass: 'bg-primary-fixed text-on-primary-fixed dark:bg-slate-800 dark:text-slate-200',
+  },
+];
+
+const selectionButtonClass = (isActive) =>
+  `min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
+    isActive
+      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold'
+      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
+  }`;
+
+const styleButtonClass = (isActive) =>
+  `px-5 py-3 rounded-xl flex items-center gap-2 border-2 text-label-md transition-all ${
+    isActive
+      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold'
+      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
+  }`;
+
+function getBudgetData(budget) {
+  return BUDGET_RANGES.find((range) => range.isActive(budget));
+}
 
 export default function AiMockup() {
   const [shopType, setShopType] = useState('coffee');
@@ -11,48 +66,17 @@ export default function AiMockup() {
   const [budget, setBudget] = useState(400000);
   const [isGenerating, setIsGenerating] = useState(false);
   const [showMockup, setShowMockup] = useState(true);
-
-  // Format budget range text and dynamic tags
-  const getBudgetData = () => {
-    if (budget < 300000) {
-      return {
-        label: '฿100,000 - ฿300,000',
-        tag: 'Economy Budget',
-        tagClass: 'bg-tertiary-fixed text-on-tertiary-fixed dark:bg-slate-800 dark:text-slate-200'
-      };
-    } else if (budget <= 600000) {
-      return {
-        label: '฿300,000 - ฿600,000',
-        tag: 'Moderate Budget',
-        tagClass: 'bg-secondary-fixed text-on-secondary-fixed dark:bg-slate-800 dark:text-slate-200'
-      };
-    } else {
-      return {
-        label: '฿600,000 - ฿1,000,000+',
-        tag: 'Premium Budget',
-        tagClass: 'bg-primary-fixed text-on-primary-fixed dark:bg-slate-800 dark:text-slate-200'
-      };
-    }
-  };
+  const currentData = mockupsData[shopType];
+  const budgetData = getBudgetData(budget);
 
   const getMockupImage = () => {
-    let budgetTier = 'economy';
-    if (budget >= 300000 && budget <= 600000) {
-      budgetTier = 'moderate';
-    } else if (budget > 600000) {
-      budgetTier = 'premium';
-    }
-
-    const tierImages = currentData.images[budgetTier] || currentData.images.economy;
+    const tierImages = currentData.images[budgetData.tier] || currentData.images.economy;
     return tierImages?.[shopStyle] || tierImages?.minimal || currentData.original;
   };
 
   const getBeforeImage = () => {
     return currentData.original;
   };
-
-  const budgetData = getBudgetData();
-  const currentData = mockupsData[shopType];
 
   const handleGenerate = () => {
     setIsGenerating(true);
@@ -81,61 +105,17 @@ export default function AiMockup() {
             <div className="mb-8">
               <label className="block font-label-md text-label-md mb-4 text-on-surface-variant dark:text-slate-400">Shop Type</label>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                <button 
-                  onClick={() => setShopType('coffee')}
-                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
-                    shopType === 'coffee' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined mb-2 text-2xl">coffee</span>
-                  <span className="font-label-sm text-label-sm">Cafe</span>
-                </button>
-                <button 
-                  onClick={() => setShopType('shabu')}
-                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
-                    shopType === 'shabu' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined mb-2 text-2xl">ramen_dining</span>
-                  <span className="font-label-sm text-label-sm">Shabu</span>
-                </button>
-                <button 
-                  onClick={() => setShopType('clothing')}
-                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
-                    shopType === 'clothing' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined mb-2 text-2xl">checkroom</span>
-                  <span className="font-label-sm text-label-sm">Clothing</span>
-                </button>
-                <button 
-                  onClick={() => setShopType('clinic')}
-                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
-                    shopType === 'clinic' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined mb-2 text-2xl">medical_services</span>
-                  <span className="font-label-sm text-label-sm">Clinic</span>
-                </button>
-                <button 
-                  onClick={() => setShopType('milk-tea')}
-                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
-                    shopType === 'milk-tea' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined mb-2 text-2xl">local_drink</span>
-                  <span className="font-label-sm text-label-sm">Milk Tea</span>
-                </button>
+                {SHOP_TYPES.map((type) => (
+                  <button
+                    key={type.key}
+                    onClick={() => setShopType(type.key)}
+                    className={selectionButtonClass(shopType === type.key)}
+                    type="button"
+                  >
+                    <span className="material-symbols-outlined mb-2 text-2xl">{type.icon}</span>
+                    <span className="font-label-sm text-label-sm">{type.label}</span>
+                  </button>
+                ))}
               </div>
             </div>
 
@@ -143,39 +123,17 @@ export default function AiMockup() {
             <div className="mb-8">
               <label className="block font-label-md text-label-md mb-4 text-on-surface-variant dark:text-slate-400">Style</label>
               <div className="flex flex-wrap gap-2">
-                <button 
-                  onClick={() => setShopStyle('minimal')}
-                  className={`px-5 py-3 rounded-xl flex items-center gap-2 border-2 text-label-md transition-all ${
-                    shopStyle === 'minimal' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-sm">remove_circle_outline</span>
-                  Minimal
-                </button>
-                <button 
-                  onClick={() => setShopStyle('modern')}
-                  className={`px-5 py-3 rounded-xl flex items-center gap-2 border-2 text-label-md transition-all ${
-                    shopStyle === 'modern' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-sm">apartment</span>
-                  Modern
-                </button>
-                <button 
-                  onClick={() => setShopStyle('luxury')}
-                  className={`px-5 py-3 rounded-xl flex items-center gap-2 border-2 text-label-md transition-all ${
-                    shopStyle === 'luxury' 
-                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
-                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-sm">auto_awesome</span>
-                  Luxury
-                </button>
+                {SHOP_STYLES.map((style) => (
+                  <button
+                    key={style.key}
+                    onClick={() => setShopStyle(style.key)}
+                    className={styleButtonClass(shopStyle === style.key)}
+                    type="button"
+                  >
+                    <span className="material-symbols-outlined text-sm">{style.icon}</span>
+                    {style.label}
+                  </button>
+                ))}
               </div>
             </div>
 

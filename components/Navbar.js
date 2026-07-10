@@ -2,6 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import BrandLogo from './BrandLogo';
+
+const navLinks = [
+  { label: 'Find Storefronts', href: '/', active: true },
+  { label: 'AI Mockup', href: '/ai-mockup' },
+  { label: 'Post Listing', href: '/' },
+  { label: 'Guide', href: '/' },
+];
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,30 +41,24 @@ export default function Navbar() {
     <header className="w-full top-0 sticky z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30 dark:bg-slate-900/80 dark:border-slate-800/50 transition-colors duration-200">
       <nav className="flex justify-between items-center h-16 sm:h-20 px-4 sm:px-6 lg:px-margin-desktop max-w-[1440px] mx-auto">
         <div className="flex min-w-0 items-center gap-6 xl:gap-8">
-          <Link
-            aria-label="Astrodog Store for Rent home"
-            href="/"
+          <BrandLogo
             className="block h-11 w-[168px] shrink-0 overflow-hidden sm:h-14 sm:w-[220px] xl:w-[248px]"
-          >
-            <img
-              alt="Astrodog Store for Rent"
-              className="h-full w-full object-cover object-center mix-blend-multiply dark:invert dark:mix-blend-screen"
-              src="/logo/long.png"
-            />
-          </Link>
+            imageClassName="h-full w-full object-cover object-center mix-blend-multiply dark:invert dark:mix-blend-screen"
+          />
           <div className="hidden lg:flex gap-5 xl:gap-6">
-            <Link className="font-label-md text-slate-900 dark:text-white border-b-2 border-primary pb-1 transition-colors" href="/">
-              Find Storefronts
-            </Link>
-            <Link className="font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="/ai-mockup">
-              AI Mockup
-            </Link>
-            <Link className="font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="/">
-              Post Listing
-            </Link>
-            <Link className="font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="/">
-              Guide
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                className={
+                  link.active
+                    ? 'font-label-md text-slate-900 dark:text-white border-b-2 border-primary pb-1 transition-colors'
+                    : 'font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors'
+                }
+                href={link.href}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-2 sm:gap-4">
