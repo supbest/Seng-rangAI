@@ -42,7 +42,13 @@ export default function AiMockup() {
     } else if (budget > 600000) {
       budgetTier = 'premium';
     }
-    return currentData.images[budgetTier]?.[shopStyle] || currentData.images.economy.minimal;
+
+    const tierImages = currentData.images[budgetTier] || currentData.images.economy;
+    return tierImages?.[shopStyle] || tierImages?.minimal || currentData.original;
+  };
+
+  const getBeforeImage = () => {
+    return currentData.original;
   };
 
   const budgetData = getBudgetData();
@@ -217,8 +223,8 @@ export default function AiMockup() {
               <div className="absolute top-4 left-4 z-10 bg-surface-container-lowest/90 dark:bg-slate-900/90 backdrop-blur-md text-on-surface dark:text-slate-100 px-4 py-1 rounded-full font-label-md text-sm border border-outline-variant dark:border-slate-800">Before</div>
               <img 
                 className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" 
-                alt="Empty commercial space before renovation" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCilXeMIkl7I2blSJtl0D1qPCDPj7SQeiSmMAAezmG8oqKtl5yTAcRj6Rg-xRqymTJ4UGFveuIZMv5tU6SLx3IhZQJ7KSGhfwvoeVx0GvFrj44nQSa3JEwuSWM_hHkdLTjMSm25vpgkK117x8VZNIkF7Aiu_SGppxcA5Zl6_oUnEvbvWNDqZewqHZK9iIlF4Mk1QGz1n5YBGyA0URt8fr2wVe9scSZuvdMv9MuFWJz2E_CygbRRUuMXbAbaExdLoUNVOPtpyLQNjMM" 
+                alt={`${currentData.title} storefront before renovation`} 
+                src={getBeforeImage()} 
               />
             </div>
 

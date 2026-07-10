@@ -3,6 +3,7 @@
     "title": "Cafe",
     "tagClass": "bg-primary-fixed text-on-primary-fixed",
     "icon": "coffee",
+    "original": "/mockups/coffee/original.png",
     "concept": "Minimalist style cafe with clear glass facade to increase spaciousness and modern feel. Suitable for working professionals and passersby. Styled with white tones and light oak wood to create a relaxing and clean atmosphere.",
     "improvements": [
       "Add storefront customer counter",
@@ -31,6 +32,7 @@
     "title": "Shabu",
     "tagClass": "bg-secondary-fixed text-on-secondary-fixed",
     "icon": "ramen_dining",
+    "original": "/mockups/shabu/original.png",
     "concept": "Warm-styled Shabu-Shabu restaurant focusing on spacious seating for families and groups of friends. Excellent ventilation layout. Outfitted with wood paneling and warm orange lighting to enhance the cozy dining experience.",
     "improvements": [
       "Install local exhaust hoods and ventilation systems",
@@ -59,6 +61,7 @@
     "title": "Clinic",
     "tagClass": "bg-tertiary-fixed text-on-tertiary-fixed",
     "icon": "medical_services",
+    "original": "/mockups/clinic/original.png",
     "concept": "Clean, simple, and highly professional clinical design. Employs bright, eye-friendly ambient lighting. Properly partitions medical consultation rooms and comfortable patient waiting areas.",
     "improvements": [
       "Install soundproof partition walls for patient privacy",
@@ -67,19 +70,19 @@
     ],
     "images": {
       "economy": {
-        "minimal": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "modern": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "luxury": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT"
+        "minimal": "/mockups/clinic/clinic-eco-min.png",
+        "modern": "/mockups/clinic/clinic-eco-min.png",
+        "luxury": "/mockups/clinic/clinic-eco-min.png"
       },
       "moderate": {
-        "minimal": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "modern": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "luxury": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT"
+        "minimal": "/mockups/clinic/clinic-mod-min.png",
+        "modern": "/mockups/clinic/clinic-pre-mod.png",
+        "luxury": "/mockups/clinic/clinic-pre-mod.png"
       },
       "premium": {
-        "minimal": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "modern": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT",
-        "luxury": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT"
+        "minimal": "/mockups/clinic/clinic-pre-min.png",
+        "modern": "/mockups/clinic/clinic-pre-mod.png",
+        "luxury": "/mockups/clinic/clinic-pre-mod.png"
       }
     }
   },
@@ -87,6 +90,7 @@
     "title": "Clothing",
     "tagClass": "bg-primary-fixed text-on-primary-fixed",
     "icon": "checkroom",
+    "original": "/mockups/clothing/original.png",
     "concept": "Modern boutique clothing store design focusing on product accent lighting. Outfitted with full-length vanity mirrors and polished stainless steel racks to elevate the premium presentation of the apparel.",
     "improvements": [
       "Partition spacious fitting rooms equipped with full-length mirrors",
