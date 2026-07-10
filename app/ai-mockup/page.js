@@ -50,7 +50,7 @@ const selectionButtonClass = (isActive) =>
   }`;
 
 const styleButtonClass = (isActive) =>
-  `px-5 py-3 rounded-xl flex items-center gap-2 border-2 text-label-md transition-all ${
+  `min-h-12 flex-1 basis-[128px] px-4 py-3 rounded-xl flex items-center justify-center gap-2 border-2 text-label-md transition-all ${
     isActive
       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold'
       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -88,7 +88,7 @@ export default function AiMockup() {
   };
 
   return (
-    <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-margin-desktop py-10 sm:py-stack-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
+    <main className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-margin-desktop py-10 sm:py-stack-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
       {/* Header Section */}
       <div className="mb-8 sm:mb-12">
         <h1 className="font-display-lg text-4xl sm:text-display-lg text-on-surface dark:text-white mb-2 font-bold">AI Storefront Mockup</h1>
@@ -97,7 +97,7 @@ export default function AiMockup() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-gutter">
         {/* Left Column: Settings Card */}
-        <aside className="lg:col-span-4 xl:col-span-3">
+        <aside className="lg:col-span-5 xl:col-span-4">
           <div className="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-outline-variant dark:border-slate-800/80 p-5 sm:p-8 lg:sticky lg:top-24">
             <h2 className="font-headline-md text-headline-md mb-6 sm:mb-8 text-slate-900 dark:text-white font-bold">Simulation Setup</h2>
             
@@ -122,7 +122,7 @@ export default function AiMockup() {
             {/* Style Selection */}
             <div className="mb-8">
               <label className="block font-label-md text-label-md mb-4 text-on-surface-variant dark:text-slate-400">Style</label>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {SHOP_STYLES.map((style) => (
                   <button
                     key={style.key}
@@ -171,7 +171,7 @@ export default function AiMockup() {
         </aside>
 
         {/* Right Column: Result Content */}
-        <div className="lg:col-span-8 xl:col-span-9 flex flex-col gap-gutter">
+        <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-gutter">
           {/* Quick Tags */}
           <div className="flex flex-wrap gap-2">
             <span className="bg-primary-fixed dark:bg-primary-container text-on-primary-fixed dark:text-on-primary-container px-4 py-1.5 rounded-full font-label-sm flex items-center gap-2">
