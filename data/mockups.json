@@ -114,5 +114,34 @@
         "luxury": "/mockups/clothing/clothing-pre-min.png"
       }
     }
+  },
+  "milk-tea": {
+    "title": "Milk Tea",
+    "tagClass": "bg-secondary-fixed text-on-secondary-fixed",
+    "icon": "local_drink",
+    "original": "/mockups/milk-tea/original.png",
+    "concept": "Compact milk tea shop design focused on fast service, bright menu visibility, and a clean grab-and-go customer flow. Suitable for transit areas, student zones, and high-footfall storefronts.",
+    "improvements": [
+      "Install drink preparation counter and sealing station",
+      "Add illuminated menu board and brand signage",
+      "Optimize queue space for quick pickup and delivery orders"
+    ],
+    "images": {
+      "economy": {
+        "minimal": "/mockups/milk-tea/tea-eco-mod.png",
+        "modern": "/mockups/milk-tea/tea-eco-mod.png",
+        "luxury": "/mockups/milk-tea/tea-eco-mod.png"
+      },
+      "moderate": {
+        "minimal": "/mockups/milk-tea/tea-mod-min.png",
+        "modern": "/mockups/milk-tea/tea-mod-mod.png",
+        "luxury": "/mockups/milk-tea/tea-mod-mod.png"
+      },
+      "premium": {
+        "minimal": "/mockups/milk-tea/tea-pre-mod.png",
+        "modern": "/mockups/milk-tea/tea-pre-mod.png",
+        "luxury": "/mockups/milk-tea/tea-pre-mod.png"
+      }
+    }
   }
 }

@@ -125,6 +125,17 @@ export default function AiMockup() {
                   <span className="material-symbols-outlined mb-2 text-2xl">medical_services</span>
                   <span className="font-label-sm text-label-sm">Clinic</span>
                 </button>
+                <button 
+                  onClick={() => setShopType('milk-tea')}
+                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                    shopType === 'milk-tea' 
+                      ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
+                      : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
+                  }`}
+                >
+                  <span className="material-symbols-outlined mb-2 text-2xl">local_drink</span>
+                  <span className="font-label-sm text-label-sm">Milk Tea</span>
+                </button>
               </div>
             </div>
 
