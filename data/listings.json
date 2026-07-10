@@ -66,6 +66,28 @@
       "href": "/listings/coffeeShopThonglor"
     },
     {
+      "id": "coffee2",
+      "title": "Garden Coffee Studio - Charoen Krung",
+      "location": "Charoen Krung, Bang Rak, Bangkok",
+      "price": "฿2,850,000",
+      "badge": "New Listing",
+      "aiScore": "87%",
+      "tags": ["Specialty Coffee", "Gallery Zone", "Renovated", "Tourist Traffic"],
+      "image": "/mockups/coffee2/original.png",
+      "href": "/listings/coffee2"
+    },
+    {
+      "id": "milk-tea",
+      "title": "Milk Tea Kiosk - Victory Monument",
+      "location": "Victory Monument, Ratchathewi, Bangkok",
+      "price": "฿980,000",
+      "badge": "Starter Friendly",
+      "aiScore": "83%",
+      "tags": ["Grab & Go", "High Footfall", "Low Staff", "Transit Hub"],
+      "image": "/mockups/milk-tea/original.png",
+      "href": "/listings/milk-tea"
+    },
+    {
       "id": "mkSiamSquare",
       "title": "MK Thai Hot Pot - Siam Square",
       "location": "Pathum Wan, Bangkok",
@@ -721,6 +743,208 @@
         }
       ],
       "beforeImage": "/mockups/clinic/clinic-eco-min.png"
+    },
+    "coffee2": {
+      "title": "Business Takeover - Garden Coffee Studio (Charoen Krung)",
+      "location": "Charoen Krung, Bang Rak, Bangkok",
+      "price": "฿2,850,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Bang Rak", "href": "/" },
+        { "label": "Charoen Krung", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "68", "unit": "sq.m." },
+        { "icon": "chair", "value": "28-34", "unit": "Seats" },
+        { "icon": "coffee_maker", "value": "Ready bar", "unit": "Equipment" },
+        { "icon": "payments", "value": "฿58,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "500 m. (7 mins) from BTS Saphan Taksin"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Specialty Coffee Studio Takeover" },
+        { "icon": "check_circle", "text": "Coffee bar, seating, and display counter ready" },
+        { "icon": "history", "text": "Operating for 2 years" },
+        { "icon": "description", "text": "3 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 12 Feb 2025" },
+        { "icon": "tag", "text": "Listing ID - CF-20765" }
+      ],
+      "description": {
+        "heading": "Character coffee studio in Charoen Krung with gallery traffic and weekend visitors",
+        "body": "A ready-to-operate cafe takeover on Charoen Krung, positioned between creative studios, boutique hotels, galleries, and riverside tourist routes. The shop has a warm garden-inspired storefront, compact espresso bar, bakery display, flexible seating, and a small prep area. It is suitable for specialty coffee, slow bar, brunch, dessert, or a creative cafe concept that can host pop-ups and weekend events. The neighborhood attracts office workers on weekdays and strong lifestyle traffic on weekends."
+      },
+      "amenities": [
+        { "icon": "coffee_maker", "text": "Espresso Bar & Grinder Station" },
+        { "icon": "bakery_dining", "text": "Bakery Display Counter" },
+        { "icon": "deck", "text": "Small Outdoor Waiting Area" },
+        { "icon": "wifi", "text": "High-speed WiFi Ready" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Saphan Taksin" },
+        { "key": "river", "label": "Chao Phraya River" },
+        { "key": "galleries", "label": "Creative Galleries" },
+        { "key": "hotels", "label": "Boutique Hotels" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿58,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿174,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿3,024,000",
+        "inclusions": [
+          "Lease rights in Charoen Krung",
+          "Coffee counter, display shelves, and seating",
+          "Basic brewing equipment and supplier contacts",
+          "Brand handover support for first month"
+        ]
+      },
+      "gallery": [
+        { "alt": "Garden coffee studio storefront", "src": "/mockups/coffee2/original.png", "main": true },
+        { "alt": "Modern specialty coffee concept", "src": "/mockups/coffee2/cafe-pre-mod.png" },
+        { "alt": "Minimal cafe seating and counter", "src": "/mockups/coffee2/cafe-mod-min.png" },
+        { "alt": "Warm coffee bar interior", "src": "/mockups/coffee2/cafe-mod-mod.png" },
+        { "alt": "Eco style cafe layout", "src": "/mockups/coffee2/cafe-eco-min.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 87,
+        "description": "Charoen Krung is strong for creative cafe concepts, tourist visits, gallery traffic, and weekend lifestyle spending."
+      },
+      "broker": {
+        "name": "Krit T.",
+        "badge": "Cafe Specialist – Riverside Bangkok",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 10,
+        "successRate": "96%",
+        "expertise": "Specialises in cafe and creative retail takeovers around Charoen Krung, Talat Noi, and Bang Rak."
+      },
+      "agent": {
+        "name": "Natcha Rueangrit",
+        "company": "Plus Property",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "local_cafe",
+          "type": "Specialty Coffee",
+          "score": "8.7/10",
+          "suggestion": "Creative neighborhood traffic supports premium coffee, seasonal drinks, and weekend pop-up collaborations.",
+          "mockupImage": "/mockups/coffee2/cafe-pre-mod.png"
+        },
+        {
+          "icon": "palette",
+          "type": "Cafe Gallery",
+          "score": "7.8/10",
+          "suggestion": "The area works well for a hybrid cafe and mini gallery concept with rotating local artist displays.",
+          "mockupImage": "/mockups/coffee2/cafe-mod-mod.png"
+        }
+      ],
+      "beforeImage": "/mockups/coffee2/original.png"
+    },
+    "milk-tea": {
+      "title": "Business Takeover - Milk Tea Kiosk (Victory Monument)",
+      "location": "Victory Monument, Ratchathewi, Bangkok",
+      "price": "฿980,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Ratchathewi", "href": "/" },
+        { "label": "Victory Monument", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "22", "unit": "sq.m." },
+        { "icon": "local_drink", "value": "Grab & go", "unit": "Format" },
+        { "icon": "groups", "value": "2-3", "unit": "Staff" },
+        { "icon": "payments", "value": "฿42,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "180 m. (3 mins) from BTS Victory Monument"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Milk Tea Kiosk Takeover" },
+        { "icon": "check_circle", "text": "Drink counter and cold storage ready" },
+        { "icon": "history", "text": "Operating for 1 year" },
+        { "icon": "description", "text": "2 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 8 Feb 2025" },
+        { "icon": "tag", "text": "Listing ID - MT-55820" }
+      ],
+      "description": {
+        "heading": "Compact milk tea kiosk near Victory Monument with strong commuter and student traffic",
+        "body": "A small-format beverage shop takeover designed for fast service and high daily turnover. Located near Victory Monument, the kiosk benefits from BTS commuters, van terminal traffic, nearby offices, tutorial schools, hospitals, and students moving through the area throughout the day. The setup includes a service counter, tea brewing station, sealing machine space, under-counter fridge, menu lightbox, and storage shelves. Ideal for milk tea, fruit tea, matcha, coffee-to-go, or a dessert drink brand."
+      },
+      "amenities": [
+        { "icon": "local_drink", "text": "Tea Brewing & Shaker Station" },
+        { "icon": "kitchen", "text": "Under-counter Cold Storage" },
+        { "icon": "bolt", "text": "Fast Service Counter Layout" },
+        { "icon": "point_of_sale", "text": "POS Counter Ready" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Victory Monument" },
+        { "key": "terminal", "label": "Van Terminal" },
+        { "key": "schools", "label": "Tutorial Schools" },
+        { "key": "hospital", "label": "Nearby Hospitals" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿42,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿126,000" },
+          { "label": "Electricity/Water", "value": "Mall Utility Rates" }
+        ],
+        "totalInitial": "฿1,106,000",
+        "inclusions": [
+          "Lease rights near Victory Monument",
+          "Drink counter, menu lightbox, and storage shelves",
+          "Cold storage, sealing station space, and basic fixtures",
+          "Recipe sheet and supplier contact handover"
+        ]
+      },
+      "gallery": [
+        { "alt": "Milk tea kiosk storefront", "src": "/mockups/milk-tea/original.png", "main": true },
+        { "alt": "Modern milk tea counter", "src": "/mockups/milk-tea/tea-pre-mod.png" },
+        { "alt": "Minimal tea shop layout", "src": "/mockups/milk-tea/tea-mod-min.png" },
+        { "alt": "Milk tea shop service area", "src": "/mockups/milk-tea/tea-mod-mod.png" },
+        { "alt": "Eco style milk tea kiosk", "src": "/mockups/milk-tea/tea-eco-mod.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 83,
+        "description": "Victory Monument is well suited for quick-service drinks because of constant commuter, student, hospital, and office traffic."
+      },
+      "broker": {
+        "name": "Ploy W.",
+        "badge": "Quick-Service Retail Specialist",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 14,
+        "successRate": "97%",
+        "expertise": "Specialises in kiosk, beverage, and small-format retail spaces around transit hubs in Bangkok."
+      },
+      "agent": {
+        "name": "Thanawat Chaisri",
+        "company": "CBRE Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "local_drink",
+          "type": "Milk Tea Brand",
+          "score": "8.3/10",
+          "suggestion": "Transit traffic and student demand make the kiosk suitable for fast-moving milk tea and fruit tea menus.",
+          "mockupImage": "/mockups/milk-tea/tea-pre-mod.png"
+        },
+        {
+          "icon": "emoji_food_beverage",
+          "type": "Grab-and-Go Drinks",
+          "score": "7.6/10",
+          "suggestion": "Small footprint and low staffing work well for bottled tea, matcha, coffee-to-go, and dessert drinks.",
+          "mockupImage": "/mockups/milk-tea/tea-mod-mod.png"
+        }
+      ],
+      "beforeImage": "/mockups/milk-tea/original.png"
     }
   }
 }
