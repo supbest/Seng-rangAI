@@ -32,10 +32,11 @@ export default function Home() {
         budget,
       });
 
+
       if (data.listings.length > 0) {
         setSearchResults(data.listings);
       } else {
-        setSearchResults(featuredListings);
+        setSearchResults([]);
         setSearchNotice(
           data.message
             ? `API returned no listing data. Showing featured storefronts instead. API message: ${data.message}`
@@ -43,7 +44,7 @@ export default function Home() {
         );
       }
     } catch (error) {
-      setSearchResults(featuredListings);
+      setSearchResults([]);
       setSearchNotice(
         error instanceof Error
           ? `Search API unavailable. Showing featured storefronts instead. ${error.message}`
