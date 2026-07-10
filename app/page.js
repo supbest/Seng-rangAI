@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import filtersData from '../data/filters.json';
 import listingsData from '../data/listings.json';
 import { requestStorefrontSearch } from '../lib/storefrontSearchClient';
 
 const { heroCard, featuredListings, features } = listingsData;
+const SEARCH_COOLDOWN_SECONDS = 30;
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,12 +16,26 @@ export default function Home() {
   const [budget, setBudget] = useState('Budget');
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
+  const [searchCooldown, setSearchCooldown] = useState(0);
   const [searchResults, setSearchResults] = useState([]);
   const [searchNotice, setSearchNotice] = useState('');
 
+  useEffect(() => {
+    if (searchCooldown <= 0) return;
+
+    const timer = setTimeout(() => {
+      setSearchCooldown((seconds) => Math.max(seconds - 1, 0));
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [searchCooldown]);
+
   const handleSearchStorefronts = async () => {
+    if (isSearching || searchCooldown > 0) return;
+
     setIsSearchModalOpen(true);
     setIsSearching(true);
+    setSearchCooldown(SEARCH_COOLDOWN_SECONDS);
     setSearchNotice('');
     setSearchResults([]);
 
@@ -33,18 +48,10 @@ export default function Home() {
       });
 
 
-      if (data.listings.length > 0) {
-        setSearchResults(data.listings);
-      } else {
-        setSearchResults([]);
-        setSearchNotice(
-          data.message
-            ? `API returned no listing data. Showing featured storefronts instead. API message: ${data.message}`
-            : 'API returned no listing data. Showing featured storefronts instead.'
-        );
-      }
+      setSearchResults(data.listings);
+      setSearchNotice(data.fallback ? data.message : '');
     } catch (error) {
-      setSearchResults([]);
+      setSearchResults(featuredListings);
       setSearchNotice(
         error instanceof Error
           ? `Search API unavailable. Showing featured storefronts instead. ${error.message}`
@@ -119,13 +126,13 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={handleSearchStorefronts}
-                  disabled={isSearching}
+                  disabled={isSearching || searchCooldown > 0}
                   className="flex-1 bg-primary text-white py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-blue-100 dark:shadow-none transition-all disabled:opacity-80 disabled:cursor-not-allowed"
                 >
                   <span className={`material-symbols-outlined ${isSearching ? 'animate-spin' : ''}`}>
-                    {isSearching ? 'progress_activity' : 'search'}
+                    {isSearching ? 'progress_activity' : searchCooldown > 0 ? 'timer' : 'search'}
                   </span>
-                  {isSearching ? 'Searching...' : 'Search Storefronts'}
+                  {isSearching ? 'Searching...' : searchCooldown > 0 ? `Cooldown ${searchCooldown}s` : 'Search Storefronts'}
                 </button>
                 <button className="flex-1 border-2 border-primary text-primary py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
                   <span className="material-symbols-outlined">add_circle</span>
