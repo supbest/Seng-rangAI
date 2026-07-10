@@ -33,11 +33,16 @@ export default function Navbar() {
     <header className="w-full top-0 sticky z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30 dark:bg-slate-900/80 dark:border-slate-800/50 transition-colors duration-200">
       <nav className="flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] mx-auto">
         <div className="flex items-center gap-8">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-md">
-              <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>store</span>
-            </div>
-            <span className="font-headline-lg text-2xl font-bold text-slate-900 dark:text-white">Storefront AI</span>
+          <Link
+            aria-label="Astrodog Store for Rent home"
+            href="/"
+            className="block h-14 w-[220px] shrink-0 overflow-hidden sm:w-[248px]"
+          >
+            <img
+              alt="Astrodog Store for Rent"
+              className="h-full w-full object-cover object-center mix-blend-multiply dark:invert dark:mix-blend-screen"
+              src="/logo/long.png"
+            />
           </Link>
           <div className="hidden lg:flex gap-6">
             <Link className="font-label-md text-slate-900 dark:text-white border-b-2 border-primary pb-1 transition-colors" href="/">

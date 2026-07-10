@@ -7,11 +7,12 @@ export default function Footer() {
     <footer className="bg-slate-50 w-full pt-20 pb-10 border-t border-slate-200 dark:bg-slate-950 dark:border-slate-900 transition-colors duration-200">
       <div className="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="col-span-1">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
-              <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>store</span>
-            </div>
-            <span className="font-headline-lg text-xl font-bold text-slate-900 dark:text-white">Storefront AI</span>
+          <div className="mb-6 h-16 w-[260px] overflow-hidden">
+            <img
+              alt="Astrodog Store for Rent"
+              className="h-full w-full object-cover object-center mix-blend-multiply dark:invert dark:mix-blend-screen"
+              src="/logo/long.png"
+            />
           </div>
           <p className="text-slate-500 dark:text-slate-400 font-body-md mb-6 leading-relaxed">
             Professional storefront rental platform that uses AI to analyze and evaluate spaces for your business success.
