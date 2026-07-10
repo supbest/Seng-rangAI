@@ -515,7 +515,208 @@
         }
       ],
       "beforeImage": "/mockups/shabu/shabu_eco_min.png"
+    },
+    "clothingSamYan": {
+      "title": "Business Takeover - Boutique Clothing Store (Sam Yan)",
+      "location": "Sam Yan, Pathum Wan, Bangkok",
+      "price": "฿3,100,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Pathum Wan", "href": "/" },
+        { "label": "Sam Yan", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "72", "unit": "sq.m." },
+        { "icon": "checkroom", "value": "4", "unit": "Fitting rooms" },
+        { "icon": "inventory_2", "value": "Stock room", "unit": "Storage" },
+        { "icon": "payments", "value": "฿70,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "250 m. (4 mins) from MRT Sam Yan"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Boutique Clothing Store Takeover" },
+        { "icon": "check_circle", "text": "Retail fixtures and display lighting ready" },
+        { "icon": "history", "text": "Operating for 3 years" },
+        { "icon": "description", "text": "3 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 18 Jan 2025" },
+        { "icon": "tag", "text": "Listing ID - CL-39174" }
+      ],
+      "description": {
+        "heading": "Fashion boutique in Sam Yan with strong student, office, and mall foot traffic",
+        "body": "Take over a modern clothing store near Samyan Mitrtown and Chulalongkorn University. The shop is designed for fashion retail with clean display walls, stainless clothing racks, full-length mirrors, fitting rooms, and a compact stock room. The location benefits from daily foot traffic from students, office workers, condo residents, and weekend shoppers moving between MRT Sam Yan, Samyan Mitrtown, and Chula. Suitable for apparel, lifestyle accessories, sneaker drops, or an online-to-offline fashion brand."
+      },
+      "amenities": [
+        { "icon": "checkroom", "text": "Display Racks & Mannequins" },
+        { "icon": "meeting_room", "text": "4 Fitting Rooms" },
+        { "icon": "highlight", "text": "Track Lighting for Product Displays" },
+        { "icon": "inventory_2", "text": "Backroom Inventory Storage" }
+      ],
+      "nearbyFilters": [
+        { "key": "mrt", "label": "MRT Sam Yan" },
+        { "key": "mitrtown", "label": "Samyan Mitrtown" },
+        { "key": "chula", "label": "Chulalongkorn University" },
+        { "key": "offices", "label": "Office Buildings" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿70,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿210,000" },
+          { "label": "Electricity/Water", "value": "Government Meter Rates" }
+        ],
+        "totalInitial": "฿3,310,000",
+        "inclusions": [
+          "Lease rights near Samyan Mitrtown",
+          "Clothing racks, display shelves, and mirrors",
+          "POS counter and stock room fixtures",
+          "Supplier contacts and social media handover"
+        ]
+      },
+      "gallery": [
+        { "alt": "Boutique clothing store storefront", "src": "/mockups/clothing/clothing-eco-min.png", "main": true },
+        { "alt": "Fashion retail display racks", "src": "/mockups/clothing/clothing-pre-lux.png" },
+        { "alt": "Premium clothing boutique interior", "src": "/mockups/clothing/clothing-pre-min.png" },
+        { "alt": "Fitting room and mirror area", "src": "/mockups/clothing/clothing-mod-min.png" },
+        { "alt": "Clothing store product display", "src": "/mockups/clothing/clothing-pre-min.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 80,
+        "description": "Sam Yan has strong student, office, and mall traffic. The space is well suited for apparel, accessories, and lifestyle retail."
+      },
+      "broker": {
+        "name": "Narin C.",
+        "badge": "Retail Specialist – Sam Yan & Chula",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 8,
+        "successRate": "94%",
+        "expertise": "Specialises in fashion retail and lifestyle store takeovers around Sam Yan, Chula, and Pathum Wan."
+      },
+      "agent": {
+        "name": "Kanyarat Phromrak",
+        "company": "Knight Frank Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "checkroom",
+          "type": "Fashion Boutique",
+          "score": "8.5/10",
+          "suggestion": "Student and office traffic around Sam Yan supports trend-led fashion and accessory retail with frequent product rotations.",
+          "mockupImage": "/mockups/clothing/clothing-pre-min.png"
+        },
+        {
+          "icon": "shopping_bag",
+          "type": "Lifestyle Concept Store",
+          "score": "7.5/10",
+          "suggestion": "The location can support a mixed retail model combining apparel, gifts, accessories, and online pickup.",
+          "mockupImage": "/mockups/clothing/clothing-mod-min.png"
+        }
+      ],
+      "beforeImage": "/mockups/clothing/clothing-eco-min.png"
+    },
+    "clinicSiam": {
+      "title": "Business Takeover - Aesthetic Clinic (Siam Square One)",
+      "location": "Siam Square One, Pathum Wan, Bangkok",
+      "price": "฿4,100,000",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Bangkok", "href": "/" },
+        { "label": "Pathum Wan", "href": "/" },
+        { "label": "Siam Square One", "href": null }
+      ],
+      "keySpecs": [
+        { "icon": "straighten", "value": "95", "unit": "sq.m." },
+        { "icon": "medical_services", "value": "3", "unit": "Treatment rooms" },
+        { "icon": "chair", "value": "12-15", "unit": "Waiting seats" },
+        { "icon": "payments", "value": "฿120,000", "unit": "/ Month" }
+      ],
+      "transport": {
+        "icon": "train",
+        "text": "120 m. (2 mins) from BTS Siam"
+      },
+      "propertyDetails": [
+        { "icon": "store", "text": "Aesthetic Clinic Takeover" },
+        { "icon": "check_circle", "text": "Treatment rooms and reception area ready" },
+        { "icon": "history", "text": "Operating for 2 years" },
+        { "icon": "description", "text": "4 years lease remaining" },
+        { "icon": "schedule", "text": "Listed on 22 Jan 2025" },
+        { "icon": "tag", "text": "Listing ID - CLN-91426" }
+      ],
+      "description": {
+        "heading": "Aesthetic clinic space in Siam Square One with direct access to BTS Siam and premium shopper traffic",
+        "body": "A ready-to-operate clinic takeover in Siam Square One, one of Bangkok's strongest beauty, wellness, and lifestyle destinations. The space includes a bright reception lobby, consultation area, three treatment rooms, clean storage, and customer waiting seats. Positioned for high visibility among university students, office workers, tourists, and premium shoppers from Siam Paragon, Siam Center, and Siam Square. Ideal for aesthetic treatments, dermatology consultation, wellness services, or a premium beauty clinic brand."
+      },
+      "amenities": [
+        { "icon": "medical_services", "text": "3 Private Treatment Rooms" },
+        { "icon": "support_agent", "text": "Reception & Consultation Counter" },
+        { "icon": "clean_hands", "text": "Handwashing and Sanitizing Stations" },
+        { "icon": "accessible", "text": "Mall Access and Elevator Convenience" }
+      ],
+      "nearbyFilters": [
+        { "key": "bts", "label": "BTS Siam" },
+        { "key": "sqone", "label": "Siam Square One" },
+        { "key": "paragon", "label": "Siam Paragon" },
+        { "key": "chula", "label": "Chulalongkorn University" }
+      ],
+      "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuAN_GNlLxXq4h3ahlG6wqI5CZJc2CJANU4R0icSgYlkV4DBa3Ps8GleSy8iY0mOh1RRlyLnhkmd_IIj6EwVzXUaLTlWymMUVn05FIQg6gu72YhfFdMrLczNd7TJk-I-p80B9EwkuWjcchANoq4Zm3SEXgx8XCqpB0mjn4yoh16Ta3IAWFwEjidtrDymKTdaV8cotbkA55LfjfBz-L60xX0VT-4ZlAcmGYwmSzAe6S-NRUrVatTcPKY9fogyMlK4Un5EkGp9pQpCSzSU",
+      "leaseTerms": {
+        "costs": [
+          { "label": "Monthly Rent", "value": "฿120,000" },
+          { "label": "Security Deposit (3 Months)", "value": "฿360,000" },
+          { "label": "Electricity/Water", "value": "Mall Utility Rates" }
+        ],
+        "totalInitial": "฿4,460,000",
+        "inclusions": [
+          "Lease rights in Siam Square One",
+          "Reception counter and waiting area furniture",
+          "Treatment beds, partitions, and clinic storage",
+          "Existing customer inquiry channels and supplier contacts"
+        ]
+      },
+      "gallery": [
+        { "alt": "Aesthetic clinic reception area", "src": "/mockups/clinic/clinic-pre-mod.png", "main": true },
+        { "alt": "Private clinic treatment room", "src": "/mockups/clinic/clinic-mod-min.png" },
+        { "alt": "Clinic waiting lounge", "src": "/mockups/clinic/clinic-eco-min.png" },
+        { "alt": "Consultation room interior", "src": "/mockups/clinic/clinic-mod-min.png" },
+        { "alt": "Clean medical clinic design", "src": "/mockups/clinic/clinic-pre-min.png", "showViewAll": true }
+      ],
+      "aiSummary": {
+        "score": 72,
+        "description": "Siam Square One offers excellent visibility for beauty and wellness services, with strong access from BTS Siam and premium mall traffic."
+      },
+      "broker": {
+        "name": "Siriporn L.",
+        "badge": "Healthcare Retail Specialist",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX",
+        "dealsClosed": 11,
+        "successRate": "95%",
+        "expertise": "Specialises in clinic, wellness, and beauty retail spaces in Siam, Chidlom, and central Bangkok malls."
+      },
+      "agent": {
+        "name": "Pattarapon Srisuwan",
+        "company": "CBRE Thailand",
+        "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHZFjOMPPcJ1mucCQEG8KYn-zJHjwnjjpLlEW2BfsGDyWhRMcQT9sQ7wE4reCXcCcHTXJJnuKzxSkFgqMSYZ-T3VaKUDHzUxVImK8bp2sWmsPsTAK25aZ-fPGPb58EUafDlGwFJPBtE2OzXnDgeO__Uw6R-h7jcXJpChAAWfTuKpg8OWeXFfS3IzEF8EgXPbaqakAnXUzA1MHjzI4K1D-ED5XgPBV4enKITgB6WPdIbaQEL_BkyTcaHtnqPOSoqomVS2PjvnjAt-JX"
+      },
+      "analysisCards": [
+        {
+          "icon": "medical_services",
+          "type": "Aesthetic Clinic",
+          "score": "8/10",
+          "suggestion": "Siam Square One draws beauty-focused customers and tourists. Existing treatment rooms reduce setup time.",
+          "mockupImage": "/mockups/clinic/clinic-pre-min.png"
+        },
+        {
+          "icon": "spa",
+          "type": "Wellness & Skin Studio",
+          "score": "7/10",
+          "suggestion": "The mall location supports appointment-based services such as facials, skincare consultation, and wellness programs.",
+          "mockupImage": "/mockups/clinic/clinic-mod-min.png"
+        }
+      ],
+      "beforeImage": "/mockups/clinic/clinic-eco-min.png"
     }
   }
 }
-

@@ -4,6 +4,8 @@ export async function generateStaticParams() {
   return [
     { id: 'specialtyCoffeeBar' },
     { id: 'shabuSukhumvit' },
+    { id: 'clothingSamYan' },
+    { id: 'clinicSiam' },
     { id: 'coffeeShopThonglor' },
     { id: 'mkSiamSquare' }
   ];
