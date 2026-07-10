@@ -70,17 +70,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-12 pb-20 px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
+      <section className="relative overflow-hidden pt-8 sm:pt-12 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
         <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
           <div className="space-y-stack-md z-10">
-            <h1 className="font-display-lg text-5xl lg:text-6xl text-slate-900 dark:text-white leading-tight">
+            <h1 className="font-display-lg text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-tight">
               Find the Right Storefront with <span className="text-primary">AI-Powered Evaluation</span>
             </h1>
             <p className="font-body-lg text-lg text-slate-500 dark:text-slate-400 max-w-lg leading-relaxed">
               Search for rentals, check readiness scores, and preview your storefront with AI mockups.
             </p>
             {/* Search Widget */}
-            <div className="bg-white dark:bg-slate-950 p-6 rounded-2xl shadow-2xl dark:shadow-none border border-slate-100 dark:border-slate-800/80 space-y-4">
+            <div className="bg-white dark:bg-slate-950 p-4 sm:p-6 rounded-2xl shadow-2xl dark:shadow-none border border-slate-100 dark:border-slate-800/80 space-y-4">
               <div className="relative">
                 <span className="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">search</span>
                 <input 
@@ -123,19 +123,19 @@ export default function Home() {
                   ))}
                 </select>
               </div>
-              <div className="flex gap-3 pt-2">
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <button
                   type="button"
                   onClick={handleSearchStorefronts}
                   disabled={isSearching || searchCooldown > 0}
-                  className="flex-1 bg-primary text-white py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-blue-100 dark:shadow-none transition-all disabled:opacity-80 disabled:cursor-not-allowed"
+                  className="flex-1 min-h-14 bg-primary text-white py-4 px-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-blue-100 dark:shadow-none transition-all disabled:opacity-80 disabled:cursor-not-allowed"
                 >
                   <span className={`material-symbols-outlined ${isSearching ? 'animate-spin' : ''}`}>
                     {isSearching ? 'progress_activity' : searchCooldown > 0 ? 'timer' : 'search'}
                   </span>
                   {isSearching ? 'Searching...' : searchCooldown > 0 ? `Cooldown ${searchCooldown}s` : 'Search Storefronts'}
                 </button>
-                <button className="flex-1 border-2 border-primary text-primary py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
+                <button className="flex-1 min-h-14 border-2 border-primary text-primary py-4 px-3 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
                   <span className="material-symbols-outlined">add_circle</span>
                   Post a Listing
                 </button>
@@ -143,7 +143,7 @@ export default function Home() {
             </div>
           </div>
           {/* Hero Visual Mockup */}
-          <div className="relative lg:block">
+          <div className="relative hidden lg:block">
             <div className="absolute -top-12 -right-12 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="relative max-w-md mx-auto lg:ml-auto">
               {/* Main Card */}
@@ -191,7 +191,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-xs text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
                   AI Mockup Preview
                 </div>
-                <div className="rounded-lg overflow-hidden h-28 mb-2 bg-slate-50 dark:bg-slate-850">
+                <div className="rounded-lg overflow-hidden h-28 mb-2 bg-slate-50 dark:bg-slate-900">
                   <img className="w-full h-full object-cover" alt="AI visualization" src={heroCard.mockupImage} />
                 </div>
                 <div className="flex gap-1 justify-center">
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-margin-desktop bg-slate-50 dark:bg-slate-950 transition-colors duration-200">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-margin-desktop bg-slate-50 dark:bg-slate-950 transition-colors duration-200">
         <div className="max-w-container-max mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-3xl text-slate-900 dark:text-white">Platform Highlights</h2>
@@ -227,9 +227,9 @@ export default function Home() {
       </section>
 
       {/* Featured Listings Section */}
-      <section className="py-20 px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
         <div className="max-w-container-max mx-auto">
-          <div className="flex justify-between items-end mb-12">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-10 sm:mb-12">
             <div>
               <h2 className="font-headline-lg text-3xl text-slate-900 dark:text-white">Recommended Storefronts</h2>
               <p className="text-slate-500 dark:text-slate-400 mt-2">Quality rental spaces evaluated by our AI system</p>
@@ -239,7 +239,7 @@ export default function Home() {
               <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
             {featuredListings.map((listing) => (
               <div key={listing.id} className="group bg-white dark:bg-slate-950 rounded-2xl border border-slate-100 dark:border-slate-800/80 overflow-hidden hover:shadow-2xl dark:hover:shadow-none transition-all">
                 <div className="relative aspect-[16/10] overflow-hidden">
@@ -292,9 +292,9 @@ export default function Home() {
       </section>
 
       {isSearchModalOpen && (
-        <div className="fixed inset-0 z-[100] bg-slate-950/60 backdrop-blur-sm px-4 py-6 flex items-center justify-center">
-          <div className="w-full max-w-6xl max-h-[90vh] bg-white dark:bg-slate-950 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl dark:shadow-none overflow-hidden flex flex-col">
-            <div className="px-6 py-5 border-b border-slate-100 dark:border-slate-800 flex items-start justify-between gap-4">
+        <div className="fixed inset-0 z-[100] bg-slate-950/60 backdrop-blur-sm px-3 sm:px-4 py-4 sm:py-6 flex items-center justify-center">
+          <div className="w-full max-w-6xl max-h-[92vh] bg-white dark:bg-slate-950 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl dark:shadow-none overflow-hidden flex flex-col">
+            <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-slate-100 dark:border-slate-800 flex items-start justify-between gap-4">
               <div>
                 <h2 className="font-headline-lg text-2xl text-slate-900 dark:text-white">Search Results</h2>
                 <p className="text-slate-500 dark:text-slate-400 mt-1">
@@ -311,7 +311,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-wrap gap-2">
+            <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 dark:border-slate-800 flex flex-wrap gap-2">
               {searchQuery && (
                 <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
                   Query: {searchQuery}
@@ -339,7 +339,7 @@ export default function Home() {
               )}
             </div>
 
-            <div className="overflow-y-auto p-6">
+            <div className="overflow-y-auto p-4 sm:p-6">
               {searchNotice && (
                 <div className="mb-5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 text-amber-900 dark:text-amber-200 px-4 py-3 text-sm">
                   {searchNotice}
@@ -352,7 +352,7 @@ export default function Home() {
                   <p className="font-label-md">Searching storefronts...</p>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-gutter">
                   {searchResults.map((listing) => (
                     <div key={listing.id} className="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800/80 overflow-hidden hover:shadow-2xl dark:hover:shadow-none transition-all">
                       <div className="relative aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
@@ -407,20 +407,20 @@ export default function Home() {
       )}
 
       {/* CTA Section */}
-      <section className="py-20 px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
-        <div className="max-w-container-max mx-auto bg-slate-900 dark:bg-slate-950 rounded-[2.5rem] p-12 text-center text-white overflow-hidden relative shadow-2xl dark:shadow-none border dark:border-slate-800">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 lg:px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">
+        <div className="max-w-container-max mx-auto bg-slate-900 dark:bg-slate-950 rounded-3xl sm:rounded-[2.5rem] p-6 sm:p-12 text-center text-white overflow-hidden relative shadow-2xl dark:shadow-none border dark:border-slate-800">
           <div className="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full -mr-32 -mt-32 blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full -ml-24 -mb-24 blur-2xl"></div>
           <div className="relative z-10">
-            <h2 className="font-display-lg text-4xl mb-6">Ready to start your business?</h2>
-            <p className="font-body-lg text-lg mb-10 text-slate-300 dark:text-slate-400 max-w-2xl mx-auto">
+            <h2 className="font-display-lg text-3xl sm:text-4xl mb-6">Ready to start your business?</h2>
+            <p className="font-body-lg text-base sm:text-lg mb-10 text-slate-300 dark:text-slate-400 max-w-2xl mx-auto">
               Whether you're a landlord or searching for space, our AI system helps you make decisions accurately and quickly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-white px-10 py-4 rounded-full font-bold shadow-xl shadow-blue-500/20 dark:shadow-none hover:scale-105 active:scale-95 transition-all">
+              <button className="bg-primary text-white px-8 sm:px-10 py-4 rounded-full font-bold shadow-xl shadow-blue-500/20 dark:shadow-none hover:scale-105 active:scale-95 transition-all">
                 Start Searching
               </button>
-              <button className="bg-white/10 text-white px-10 py-4 rounded-full font-bold border border-white/20 hover:bg-white/20 transition-all backdrop-blur-sm">
+              <button className="bg-white/10 text-white px-8 sm:px-10 py-4 rounded-full font-bold border border-white/20 hover:bg-white/20 transition-all backdrop-blur-sm">
                 Post for Free Today
               </button>
             </div>

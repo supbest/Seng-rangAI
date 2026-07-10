@@ -64,26 +64,26 @@ export default function AiMockup() {
   };
 
   return (
-    <main className="max-w-[1280px] mx-auto px-margin-desktop py-stack-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
+    <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-margin-desktop py-10 sm:py-stack-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
       {/* Header Section */}
-      <div className="mb-12">
-        <h1 className="font-display-lg text-display-lg text-on-surface dark:text-white mb-2 font-bold">AI Storefront Mockup</h1>
+      <div className="mb-8 sm:mb-12">
+        <h1 className="font-display-lg text-4xl sm:text-display-lg text-on-surface dark:text-white mb-2 font-bold">AI Storefront Mockup</h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-400">Simulate storefront with AI to visualize interior/exterior design options before leasing.</p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-gutter">
         {/* Left Column: Settings Card */}
         <aside className="lg:col-span-4 xl:col-span-3">
-          <div className="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-outline-variant dark:border-slate-800/80 p-8 sticky top-24">
-            <h2 className="font-headline-md text-headline-md mb-8 text-slate-900 dark:text-white font-bold">Simulation Setup</h2>
+          <div className="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-outline-variant dark:border-slate-800/80 p-5 sm:p-8 lg:sticky lg:top-24">
+            <h2 className="font-headline-md text-headline-md mb-6 sm:mb-8 text-slate-900 dark:text-white font-bold">Simulation Setup</h2>
             
             {/* Shop Type */}
             <div className="mb-8">
               <label className="block font-label-md text-label-md mb-4 text-on-surface-variant dark:text-slate-400">Shop Type</label>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 <button 
                   onClick={() => setShopType('coffee')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
                     shopType === 'coffee' 
                       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
                       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -94,7 +94,7 @@ export default function AiMockup() {
                 </button>
                 <button 
                   onClick={() => setShopType('shabu')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
                     shopType === 'shabu' 
                       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
                       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -105,7 +105,7 @@ export default function AiMockup() {
                 </button>
                 <button 
                   onClick={() => setShopType('clothing')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
                     shopType === 'clothing' 
                       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
                       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -116,7 +116,7 @@ export default function AiMockup() {
                 </button>
                 <button 
                   onClick={() => setShopType('clinic')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
                     shopType === 'clinic' 
                       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
                       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -127,7 +127,7 @@ export default function AiMockup() {
                 </button>
                 <button 
                   onClick={() => setShopType('milk-tea')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all hover:border-primary ${
+                  className={`min-h-[92px] flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl border-2 transition-all hover:border-primary ${
                     shopType === 'milk-tea' 
                       ? 'active-chip border-primary text-primary dark:text-white bg-surface-container-lowest dark:bg-primary/20 font-semibold' 
                       : 'bg-surface-container-low dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 border-transparent hover:border-outline-variant dark:hover:border-slate-700'
@@ -181,7 +181,7 @@ export default function AiMockup() {
 
             {/* Budget Slider */}
             <div className="mb-10">
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
                 <label className="font-label-md text-label-md text-on-surface-variant dark:text-slate-400">Budget</label>
                 <span className="text-primary font-bold">{budgetData.label}</span>
               </div>
@@ -233,7 +233,7 @@ export default function AiMockup() {
             <div className="relative rounded-2xl overflow-hidden shadow-sm group border border-outline-variant bg-surface-container-low dark:bg-slate-900 dark:border-slate-800/80">
               <div className="absolute top-4 left-4 z-10 bg-surface-container-lowest/90 dark:bg-slate-900/90 backdrop-blur-md text-on-surface dark:text-slate-100 px-4 py-1 rounded-full font-label-md text-sm border border-outline-variant dark:border-slate-800">Before</div>
               <img 
-                className="h-[360px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] md:h-[420px]" 
+                className="h-[320px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:h-[360px] md:h-[420px]" 
                 alt={`${currentData.title} storefront before renovation`} 
                 src={getBeforeImage()} 
               />
@@ -244,14 +244,14 @@ export default function AiMockup() {
               <div className="absolute top-4 left-4 z-10 bg-primary/90 backdrop-blur-md text-white px-4 py-1 rounded-full font-label-md text-sm">After</div>
               
               {isGenerating ? (
-                <div className="h-[360px] w-full bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300 md:h-[420px]">
+                <div className="h-[320px] w-full bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300 sm:h-[360px] md:h-[420px]">
                   <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
                   <span className="text-body-md font-bold text-primary animate-pulse">AI is styling the space...</span>
                 </div>
               ) : (
                 showMockup && (
                   <img 
-                    className="h-[360px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] fade-in md:h-[420px]" 
+                    className="h-[320px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] fade-in sm:h-[360px] md:h-[420px]" 
                     alt="Simulated AI storefront design" 
                     src={getMockupImage()} 
                   />
@@ -261,7 +261,7 @@ export default function AiMockup() {
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-gutter">
             <div className="bg-surface-container-lowest dark:bg-slate-900 p-6 rounded-2xl border border-outline-variant dark:border-slate-800/80 shadow-sm h-full">
               <div className="flex items-center gap-3 mb-4">
                 <span className="material-symbols-outlined text-primary text-2xl">lightbulb</span>

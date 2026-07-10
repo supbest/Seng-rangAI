@@ -76,10 +76,16 @@ export default {
         "gutter": "24px",
         "sm": "12px",
         "md": "24px",
-        "xl": "80px"
+        "xl": "80px",
+        "stack-md": "32px",
+        "stack-lg": "64px"
+      },
+      maxWidth: {
+        "container-max": "1280px"
       },
       fontFamily: {
         "headline-lg-mobile": ["Manrope"],
+        "headline-md": ["Manrope"],
         "label-sm": ["Inter"],
         "body-md": ["Inter"],
         "display-lg": ["Manrope"],
@@ -89,6 +95,14 @@ export default {
         "headline-lg": ["Manrope"]
       },
       fontSize: {
+        "headline-md": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "letterSpacing": "0",
+            "fontWeight": "600"
+          }
+        ],
         "headline-lg-mobile": [
           "24px",
           {
@@ -114,7 +128,7 @@ export default {
           "48px",
           {
             "lineHeight": "56px",
-            "letterSpacing": "-0.02em",
+            "letterSpacing": "0",
             "fontWeight": "700"
           }
         ],
@@ -136,7 +150,7 @@ export default {
           "14px",
           {
             "lineHeight": "20px",
-            "letterSpacing": "0.01em",
+            "letterSpacing": "0",
             "fontWeight": "500"
           }
         ],
@@ -144,7 +158,7 @@ export default {
           "32px",
           {
             "lineHeight": "40px",
-            "letterSpacing": "-0.01em",
+            "letterSpacing": "0",
             "fontWeight": "600"
           }
         ]

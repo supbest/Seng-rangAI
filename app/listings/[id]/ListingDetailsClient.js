@@ -41,9 +41,9 @@ export default function ListingDetailsClient({ params }) {
   return (
     <>
       {/* Main Content */}
-      <main className="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-md flex flex-col gap-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
+      <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-margin-desktop py-md flex flex-col gap-8 lg:gap-lg fade-in text-on-surface dark:text-slate-100 transition-colors duration-200">
         {/* Breadcrumbs */}
-        <div className="text-label-sm font-label-sm text-secondary dark:text-slate-400 flex items-center gap-2">
+        <div className="text-label-sm font-label-sm text-secondary dark:text-slate-400 flex items-center gap-2 overflow-x-auto pb-1">
           {listing.breadcrumbs.map((crumb, i) => (
             <span key={i} className="flex items-center gap-2">
               {i > 0 && <span className="material-symbols-outlined text-[16px]">chevron_right</span>}
@@ -57,7 +57,7 @@ export default function ListingDetailsClient({ params }) {
         </div>
 
         {/* Hero Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-2 h-[500px] rounded-lg overflow-hidden relative">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-2 h-[320px] sm:h-[420px] lg:h-[500px] rounded-lg overflow-hidden relative">
           {listing.gallery.map((img, i) => (
             <div 
               key={i} 
@@ -79,9 +79,9 @@ export default function ListingDetailsClient({ params }) {
           <div className="lg:col-span-2 flex flex-col gap-md">
             {/* Header Info */}
             <div className="flex flex-col gap-2 border-b border-outline-variant dark:border-slate-800 pb-sm">
-              <div className="flex justify-between items-start">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
                 <div>
-                  <h1 className="text-headline-lg font-headline-lg text-on-background dark:text-white">{listing.title}</h1>
+                  <h1 className="text-2xl sm:text-headline-lg font-headline-lg text-on-background dark:text-white">{listing.title}</h1>
                   <p className="text-body-md font-body-md text-secondary dark:text-slate-400 mt-1 flex items-center gap-1">
                     <span className="material-symbols-outlined text-[18px]">location_on</span> {listing.location}
                   </p>
@@ -92,7 +92,7 @@ export default function ListingDetailsClient({ params }) {
               </div>
               
               {/* Key Specs */}
-              <div className="flex gap-6 mt-4 pt-4 border-t border-outline-variant/50 dark:border-slate-800">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-4 pt-4 border-t border-outline-variant/50 dark:border-slate-800">
                 {listing.keySpecs.map((spec, i) => (
                   <div key={i} className="flex flex-col items-center gap-1 text-center">
                     <span className="material-symbols-outlined text-tertiary dark:text-slate-400">{spec.icon}</span>
@@ -205,7 +205,7 @@ export default function ListingDetailsClient({ params }) {
 
           {/* Right Column (Sidebar) */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 bg-surface-container-lowest dark:bg-slate-900 rounded-xl border border-outline-variant dark:border-slate-800/80 shadow-sm p-6 flex flex-col gap-4">
+            <div className="lg:sticky lg:top-24 bg-surface-container-lowest dark:bg-slate-900 rounded-xl border border-outline-variant dark:border-slate-800/80 shadow-sm p-5 sm:p-6 flex flex-col gap-4">
               <div className="border-b border-outline-variant dark:border-slate-800 pb-4 mb-2">
                 <h2 className="text-label-md font-bold mb-4 flex items-center gap-2 text-on-background dark:text-white">
                   <span className="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
