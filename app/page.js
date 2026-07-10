@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import filtersData from '../data/filters.json';
 import listingsData from '../data/listings.json';
+import { requestStorefrontSearch } from '../lib/storefrontSearchClient';
 
 const { heroCard, featuredListings, features } = listingsData;
 
@@ -12,6 +13,50 @@ export default function Home() {
   const [location, setLocation] = useState('Location');
   const [businessType, setBusinessType] = useState('Type');
   const [budget, setBudget] = useState('Budget');
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchNotice, setSearchNotice] = useState('');
+
+  const handleSearchStorefronts = async () => {
+    setIsSearchModalOpen(true);
+    setIsSearching(true);
+    setSearchNotice('');
+    setSearchResults([]);
+
+    try {
+      const data = await requestStorefrontSearch({
+        query: searchQuery,
+        location,
+        businessType,
+        budget,
+      });
+
+      if (data.listings.length > 0) {
+        setSearchResults(data.listings);
+      } else {
+        setSearchResults(featuredListings);
+        setSearchNotice(
+          data.message
+            ? `API returned no listing data. Showing featured storefronts instead. API message: ${data.message}`
+            : 'API returned no listing data. Showing featured storefronts instead.'
+        );
+      }
+    } catch (error) {
+      setSearchResults(featuredListings);
+      setSearchNotice(
+        error instanceof Error
+          ? `Search API unavailable. Showing featured storefronts instead. ${error.message}`
+          : 'Search API unavailable. Showing featured storefronts instead.'
+      );
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
+  const closeSearchModal = () => {
+    setIsSearchModalOpen(false);
+  };
 
   return (
     <>
@@ -70,9 +115,16 @@ export default function Home() {
                 </select>
               </div>
               <div className="flex gap-3 pt-2">
-                <button className="flex-1 bg-primary text-white py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-blue-100 dark:shadow-none transition-all">
-                  <span className="material-symbols-outlined">search</span>
-                  Search Storefronts
+                <button
+                  type="button"
+                  onClick={handleSearchStorefronts}
+                  disabled={isSearching}
+                  className="flex-1 bg-primary text-white py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-blue-100 dark:shadow-none transition-all disabled:opacity-80 disabled:cursor-not-allowed"
+                >
+                  <span className={`material-symbols-outlined ${isSearching ? 'animate-spin' : ''}`}>
+                    {isSearching ? 'progress_activity' : 'search'}
+                  </span>
+                  {isSearching ? 'Searching...' : 'Search Storefronts'}
                 </button>
                 <button className="flex-1 border-2 border-primary text-primary py-4 rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-primary/5 transition-all">
                   <span className="material-symbols-outlined">add_circle</span>
@@ -229,6 +281,121 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {isSearchModalOpen && (
+        <div className="fixed inset-0 z-[100] bg-slate-950/60 backdrop-blur-sm px-4 py-6 flex items-center justify-center">
+          <div className="w-full max-w-6xl max-h-[90vh] bg-white dark:bg-slate-950 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl dark:shadow-none overflow-hidden flex flex-col">
+            <div className="px-6 py-5 border-b border-slate-100 dark:border-slate-800 flex items-start justify-between gap-4">
+              <div>
+                <h2 className="font-headline-lg text-2xl text-slate-900 dark:text-white">Search Results</h2>
+                <p className="text-slate-500 dark:text-slate-400 mt-1">
+                  Storefront matches based on your current search filters.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={closeSearchModal}
+                className="w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-slate-500 hover:text-primary hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-900 transition-colors"
+                aria-label="Close search results"
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            </div>
+
+            <div className="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-wrap gap-2">
+              {searchQuery && (
+                <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
+                  Query: {searchQuery}
+                </span>
+              )}
+              {location !== 'Location' && (
+                <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
+                  {location}
+                </span>
+              )}
+              {businessType !== 'Type' && (
+                <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
+                  {businessType}
+                </span>
+              )}
+              {budget !== 'Budget' && (
+                <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
+                  {budget}
+                </span>
+              )}
+              {!searchQuery && location === 'Location' && businessType === 'Type' && budget === 'Budget' && (
+                <span className="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 px-3 py-1 rounded-full text-label-sm">
+                  All storefronts
+                </span>
+              )}
+            </div>
+
+            <div className="overflow-y-auto p-6">
+              {searchNotice && (
+                <div className="mb-5 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 text-amber-900 dark:text-amber-200 px-4 py-3 text-sm">
+                  {searchNotice}
+                </div>
+              )}
+
+              {isSearching ? (
+                <div className="min-h-[280px] flex flex-col items-center justify-center gap-4 text-primary">
+                  <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+                  <p className="font-label-md">Searching storefronts...</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+                  {searchResults.map((listing) => (
+                    <div key={listing.id} className="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800/80 overflow-hidden hover:shadow-2xl dark:hover:shadow-none transition-all">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                        <img alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={listing.image}/>
+                        <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm">{listing.badge}</div>
+                        <div className="absolute top-4 right-4 bg-white/90 dark:bg-slate-950/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                          <div className="flex items-center gap-1">
+                            <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">AI Score</span>
+                            <span className="text-xs font-bold text-primary">{listing.aiScore}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-2">{listing.title}</h3>
+                        <div className="flex items-center gap-1 text-slate-400 dark:text-slate-500 text-sm mb-4">
+                          <span className="material-symbols-outlined text-sm">location_on</span>
+                          {listing.location}
+                        </div>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {listing.tags.map((tag) => (
+                            <span key={tag} className="bg-slate-100 dark:bg-slate-950 px-3 py-1 rounded-full text-[10px] text-slate-600 dark:text-slate-400">{tag}</span>
+                          ))}
+                        </div>
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="font-bold text-primary text-2xl">{listing.price}</span>
+                        </div>
+                        <div className="flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-800">
+                          <div className="flex gap-4">
+                            <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" type="button">
+                              <span className="material-symbols-outlined">favorite</span>
+                            </button>
+                            <button className="text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" type="button">
+                              <span className="material-symbols-outlined">share</span>
+                            </button>
+                          </div>
+                          <Link 
+                            href={listing.href} 
+                            className="bg-primary text-white px-6 py-2 rounded-lg text-sm font-label-md hover:brightness-110 transition-all text-center"
+                            onClick={closeSearchModal}
+                          >
+                            View Details
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* CTA Section */}
       <section className="py-20 px-margin-desktop bg-white dark:bg-slate-900 transition-colors duration-200">

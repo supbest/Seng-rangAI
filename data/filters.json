@@ -1,5 +1,5 @@
 {
-  "locations": ["Sukhumvit", "Asok", "Ari"],
-  "businessTypes": ["Cafe", "Clinic", "Restaurant"],
+  "locations": ["Sukhumvit", "Asok", "Ari", "Sam-Yan", "Siam"],
+  "businessTypes": ["Cafe", "Clinic", "Restaurant", "Clothing"],
   "budgets": ["10,000 - 30,000", "30,000 - 50,000", "50,000+"]
 }
