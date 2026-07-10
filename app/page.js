@@ -58,6 +58,7 @@ export default function Home() {
           : 'Search API unavailable. Showing featured storefronts instead.'
       );
     } finally {
+      setIsSearchModalOpen(true);
       setIsSearching(false);
     }
   };
