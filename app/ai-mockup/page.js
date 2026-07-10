@@ -73,7 +73,7 @@ export default function AiMockup() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
         {/* Left Column: Settings Card */}
-        <aside className="lg:col-span-4">
+        <aside className="lg:col-span-4 xl:col-span-3">
           <div className="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-outline-variant dark:border-slate-800/80 p-8 sticky top-24">
             <h2 className="font-headline-md text-headline-md mb-8 text-slate-900 dark:text-white font-bold">Simulation Setup</h2>
             
@@ -213,7 +213,7 @@ export default function AiMockup() {
         </aside>
 
         {/* Right Column: Result Content */}
-        <div className="lg:col-span-8 flex flex-col gap-gutter">
+        <div className="lg:col-span-8 xl:col-span-9 flex flex-col gap-gutter">
           {/* Quick Tags */}
           <div className="flex flex-wrap gap-2">
             <span className="bg-primary-fixed dark:bg-primary-container text-on-primary-fixed dark:text-on-primary-container px-4 py-1.5 rounded-full font-label-sm flex items-center gap-2">
@@ -228,30 +228,30 @@ export default function AiMockup() {
           </div>
 
           {/* Before/After Images Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             {/* Before Card */}
-            <div className="relative rounded-2xl overflow-hidden shadow-sm group border dark:border-slate-800/80">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm group border border-outline-variant bg-surface-container-low dark:bg-slate-900 dark:border-slate-800/80">
               <div className="absolute top-4 left-4 z-10 bg-surface-container-lowest/90 dark:bg-slate-900/90 backdrop-blur-md text-on-surface dark:text-slate-100 px-4 py-1 rounded-full font-label-md text-sm border border-outline-variant dark:border-slate-800">Before</div>
               <img 
-                className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" 
+                className="h-[360px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] md:h-[420px]" 
                 alt={`${currentData.title} storefront before renovation`} 
                 src={getBeforeImage()} 
               />
             </div>
 
             {/* After Card */}
-            <div className="relative rounded-2xl overflow-hidden shadow-sm group bg-slate-200 dark:bg-slate-900 border dark:border-slate-800/80">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm group bg-surface-container-low dark:bg-slate-900 border border-outline-variant dark:border-slate-800/80">
               <div className="absolute top-4 left-4 z-10 bg-primary/90 backdrop-blur-md text-white px-4 py-1 rounded-full font-label-md text-sm">After</div>
               
               {isGenerating ? (
-                <div className="w-full aspect-[4/5] bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300">
+                <div className="h-[360px] w-full bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300 md:h-[420px]">
                   <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
                   <span className="text-body-md font-bold text-primary animate-pulse">AI is styling the space...</span>
                 </div>
               ) : (
                 showMockup && (
                   <img 
-                    className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105 fade-in" 
+                    className="h-[360px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] fade-in md:h-[420px]" 
                     alt="Simulated AI storefront design" 
                     src={getMockupImage()} 
                   />
