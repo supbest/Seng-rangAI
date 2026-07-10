@@ -18,7 +18,7 @@
       "badge": "Premium Listing",
       "aiScore": "92%",
       "tags": ["Fully Equipped", "High Traffic", "3 Years Operation", "Corner Unit"],
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCAdzMU0vCfp4jQefFdi7z2UQ84Y9QjlW_4WI2y6PD0LKE0IO28Xa12vowQtul7Lqb1LI1TSfloXFGDLmh8CmBSKMvFjO9pSjNzf0QVphMJ0q34cycADmOGglGV1RXgQ8ZpBVDf4T3FswU75YGX9DEwUY3L4IhbUDllXd17IS0xeCyo-Gs5f9eCDjgG9JNfGG7vDt93-ZhWmuIeipqzar9TwdV3vdU0_K-uGYZsrpjNPo0UG0X64WIzjY_PSSanZ1KkfNnUGwv4gvw",
+      "image": "/mockups/coffee/original-ari.png",
       "href": "/listings/specialtyCoffeeBar"
     },
     {
@@ -29,7 +29,7 @@
       "badge": "Hot Deal",
       "aiScore": "88%",
       "tags": ["Ventilation Ready", "Family Zone", "5 Years Operation", "Street-Front"],
-      "image": "/mockups/shabu/shabu_mod_lux.png",
+      "image": "/mockups/shabu/original.png",
       "href": "/listings/shabuSukhumvit"
     },
     {
@@ -40,7 +40,7 @@
       "badge": "Hot Deal",
       "aiScore": "80%",
       "tags": ["Ventilation Ready", "Family Zone", "5 Years Operation", "Street-Front"],
-      "image": "/mockups/clothing/clothing-eco-min.png",
+      "image": "/mockups/clothing/original.png",
       "href": "/listings/clothingSamYan"
     },
     {
@@ -51,7 +51,7 @@
       "badge": "Hot Deal",
       "aiScore": "72%",
       "tags": ["Ventilation Ready", "Premium Area", "Prime Location", "Street-Front"],
-      "image": "/mockups/clinic/clinic-pre-min.png",
+      "image": "/mockups/clinic/original.png",
       "href": "/listings/clinicSiam"
     },
     {
@@ -62,7 +62,7 @@
       "badge": "Verified",
       "aiScore": "85%",
       "tags": ["License", "Premium Area", "Full Equipped", "Walk-in Traffic"],
-      "image": "/mockups/coffee/cafe_eco_lux.png",
+      "image": "/mockups/coffee/original.png",
       "href": "/listings/coffeeShopThonglor"
     },
     {
@@ -73,7 +73,7 @@
       "badge": "New Listing",
       "aiScore": "79%",
       "tags": ["Prime Location", "Student Zone", "Fitting Rooms", "Display Ready"],
-      "image": "/mockups/shabu/shabu_pre_mod.png",
+      "image": "/mockups/shabu/original-mk.png",
       "href": "/listings/mkSiamSquare"
     }
   ],
@@ -156,9 +156,13 @@
       },
       "gallery": [
         {
-          "alt": "Cozy coffee shop interior",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn",
+          "alt": "Cafe seating",
+          "src": "/mockups/coffee/original-ari.png",
           "main": true
+        },
+        {
+          "alt": "Cozy coffee shop interior",
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn"
         },
         {
           "alt": "Professional espresso machine",
@@ -170,12 +174,8 @@
         },
         {
           "alt": "Cafe interior view",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn"
-        },
-        {
-          "alt": "Cafe seating",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDA18uNTaNDk5tJ2O-QI5DbxeXfpa_4wM2R0K4FunQD-QmXe4YAfItmPS-MFOU3qoiDU7pRt7XmQhl1SnDEU4pIpRQB4__kOVeMW3C2viX1wpqrCSaoXGbEv9bRRHPEfCNMXuDB6w1Q6HsbKgOgLvYmECot_XsDvlGrthB3QL-yO-D5c5UpGjGIdJHV9M8VkHZuw_0QUpAIjgEvaHfGwrFi5IK_mlhl6Hu0QYS-JMDv8x2-_7yoRU_535krpii1tovnxrpvcGtMCrI-",
-          "showViewAll": true
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn",
+           "showViewAll": true
         }
       ],
       "aiSummary": {
@@ -273,7 +273,7 @@
         ]
       },
       "gallery": [
-        { "alt": "Shabu restaurant dining area", "src": "/mockups/shabu/shabu_mod_lux.png", "main": true },
+        { "alt": "Shabu restaurant dining area", "src": "/mockups/shabu/original.png", "main": true },
         { "alt": "Induction cooktop station", "src": "/mockups/shabu/shabu_mod_mod.png" },
         { "alt": "Restaurant interior", "src": "/mockups/shabu/shabu_mod_min.png" },
         { "alt": "Private dining booth", "src": "/mockups/shabu/shabu_eco_lux.png" },
@@ -374,9 +374,13 @@
         ]
       },
       "gallery": [
-        { "alt": "Coffee shop exterior", "src": "/mockups/coffee/cafe_eco_lux.png", "main": true },
+        {
+          "alt": "Cozy coffee shop interior",
+          "src": "/mockups/coffee/original.png",
+          "main": true
+        },
+        { "alt": "Coffee shop exterior", "src": "/mockups/coffee/cafe_eco_lux.png"},
         { "alt": "Barista station", "src": "/mockups/coffee/cafe_eco_mod.png" },
-        { "alt": "Seating area", "src": "/mockups/coffee/cafe_eco_min.png" },
         { "alt": "Bakery display", "src": "/mockups/coffee/cafe_mod_lux.png" },
         { "alt": "Interior design", "src": "/mockups/coffee/cafe_mod_mod.png", "showViewAll": true }
       ],
@@ -475,11 +479,11 @@
         ]
       },
       "gallery": [
-        { "alt": "Hot pot restaurant interior", "src": "/mockups/shabu/shabu_pre_mod.png", "main": true },
+        { "alt": "Hot pot restaurant interior", "src": "/mockups/shabu/original-mk.png", "main": true },
+        { "alt": "Hot pot restaurant interior", "src": "/mockups/shabu/shabu_pre_mod.png"},
         { "alt": "Hot pot cooking station", "src": "/mockups/shabu/shabu_pre_min.png" },
         { "alt": "Restaurant seating", "src": "/mockups/shabu/shabu_pre_lux.png" },
-        { "alt": "Kitchen area", "src": "/mockups/shabu/shabu_eco_lux.png" },
-        { "alt": "Exterior view", "src": "/mockups/shabu/shabu_eco_mod.png", "showViewAll": true }
+        { "alt": "Kitchen area", "src": "/mockups/shabu/shabu_eco_lux.png", "showViewAll": true }
       ],
       "aiSummary": {
         "score": 79,
@@ -576,7 +580,7 @@
         ]
       },
       "gallery": [
-        { "alt": "Boutique clothing store storefront", "src": "/mockups/clothing/clothing-eco-min.png", "main": true },
+        { "alt": "Boutique clothing store storefront", "src": "/mockups/clothing/original.png", "main": true },
         { "alt": "Fashion retail display racks", "src": "/mockups/clothing/clothing-pre-lux.png" },
         { "alt": "Premium clothing boutique interior", "src": "/mockups/clothing/clothing-pre-min.png" },
         { "alt": "Fitting room and mirror area", "src": "/mockups/clothing/clothing-mod-min.png" },
@@ -615,7 +619,7 @@
           "mockupImage": "/mockups/clothing/clothing-mod-min.png"
         }
       ],
-      "beforeImage": "/mockups/clothing/clothing-eco-min.png"
+      "beforeImage": "/mockups/clothing/original.png"
     },
     "clinicSiam": {
       "title": "Business Takeover - Aesthetic Clinic (Siam Square One)",
@@ -677,11 +681,11 @@
         ]
       },
       "gallery": [
-        { "alt": "Aesthetic clinic reception area", "src": "/mockups/clinic/clinic-pre-mod.png", "main": true },
+        { "alt": "Aesthetic clinic reception area", "src": "/mockups/clinic/original.png", "main": true },
         { "alt": "Private clinic treatment room", "src": "/mockups/clinic/clinic-mod-min.png" },
         { "alt": "Clinic waiting lounge", "src": "/mockups/clinic/clinic-eco-min.png" },
-        { "alt": "Consultation room interior", "src": "/mockups/clinic/clinic-mod-min.png" },
-        { "alt": "Clean medical clinic design", "src": "/mockups/clinic/clinic-pre-min.png", "showViewAll": true }
+        { "alt": "Consultation room interior", "src": "/mockups/clinic/clinic-pre-min.png" },
+        { "alt": "Clean medical clinic design", "src": "/mockups/clinic/clinic-pre-mod.png", "showViewAll": true }
       ],
       "aiSummary": {
         "score": 72,
