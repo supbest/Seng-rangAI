@@ -2,16 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import BrandLogo from './BrandLogo';
 
 const navLinks = [
-  { label: 'Find Storefronts', href: '/', active: true },
+  { label: 'Find Storefronts', href: '/' },
   { label: 'AI Mockup', href: '/ai-mockup' },
   { label: 'Post Listing', href: '/' },
   { label: 'Guide', href: '/' },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -46,19 +48,27 @@ export default function Navbar() {
             imageClassName="h-full w-full object-cover object-center mix-blend-multiply dark:invert dark:mix-blend-screen"
           />
           <div className="hidden lg:flex gap-5 xl:gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                className={
-                  link.active
-                    ? 'font-label-md text-slate-900 dark:text-white border-b-2 border-primary pb-1 transition-colors'
-                    : 'font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors'
-                }
-                href={link.href}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = link.label === 'Find Storefronts'
+                ? (pathname === '/' || pathname.startsWith('/listings'))
+                : link.label === 'AI Mockup'
+                  ? pathname === '/ai-mockup'
+                  : false;
+
+              return (
+                <Link
+                  key={link.label}
+                  className={
+                    isActive
+                      ? 'font-label-md text-slate-900 dark:text-white border-b-2 border-primary pb-1 transition-colors'
+                      : 'font-label-md text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors'
+                  }
+                  href={link.href}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
         <div className="flex shrink-0 items-center gap-2 sm:gap-4">

@@ -18,7 +18,7 @@
       "badge": "Premium Listing",
       "aiScore": "92%",
       "tags": ["Fully Equipped", "High Traffic", "3 Years Operation", "Corner Unit"],
-      "image": "/mockups/coffee/image7.jpg",
+      "image": "/mockups/coffee/Image7.jpg",
       "href": "/listings/specialtyCoffeeBar"
     },
     {
@@ -179,24 +179,24 @@
       "gallery": [
         {
           "alt": "Cafe seating",
-          "src": "/mockups/coffee/image8.jpg",
+          "src": "/mockups/coffee/Image8.jpg",
           "main": true
         },
         {
           "alt": "Cozy coffee shop interior",
-          "src": "/mockups/coffee/image5.jpg"
+          "src": "/mockups/coffee/Image5.jpg"
         },
         {
           "alt": "Professional espresso machine",
-          "src": "/mockups/coffee/image4.jpg"
+          "src": "/mockups/coffee/Image4.jpg"
         },
         {
           "alt": "Modern cafe seating area",
-          "src": "/mockups/coffee/image7.jpg"
+          "src": "/mockups/coffee/Image7.jpg"
         },
         {
           "alt": "Cafe interior view",
-          "src": "/mockups/coffee/image6.jpg",
+          "src": "/mockups/coffee/Image6.jpg",
           "showViewAll": true
         }
       ],
