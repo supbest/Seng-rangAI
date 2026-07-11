@@ -18,7 +18,7 @@
       "badge": "Premium Listing",
       "aiScore": "92%",
       "tags": ["Fully Equipped", "High Traffic", "3 Years Operation", "Corner Unit"],
-      "image": "/mockups/coffee/original-ari.png",
+      "image": "/mockups/coffee/image7.jpg",
       "href": "/listings/specialtyCoffeeBar"
     },
     {
@@ -179,7 +179,7 @@
       "gallery": [
         {
           "alt": "Cafe seating",
-          "src": "/mockups/coffee/image6.jpg",
+          "src": "/mockups/coffee/image8.jpg",
           "main": true
         },
         {
@@ -192,12 +192,12 @@
         },
         {
           "alt": "Modern cafe seating area",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDA18uNTaNDk5tJ2O-QI5DbxeXfpa_4wM2R0K4FunQD-QmXe4YAfItmPS-MFOU3qoiDU7pRt7XmQhl1SnDEU4pIpRQB4__kOVeMW3C2viX1wpqrCSaoXGbEv9bRRHPEfCNMXuDB6w1Q6HsbKgOgLvYmECot_XsDvlGrthB3QL-yO-D5c5UpGjGIdJHV9M8VkHZuw_0QUpAIjgEvaHfGwrFi5IK_mlhl6Hu0QYS-JMDv8x2-_7yoRU_535krpii1tovnxrpvcGtMCrI-"
+          "src": "/mockups/coffee/image7.jpg"
         },
         {
           "alt": "Cafe interior view",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn",
-           "showViewAll": true
+          "src": "/mockups/coffee/image6.jpg",
+          "showViewAll": true
         }
       ],
       "aiSummary": {

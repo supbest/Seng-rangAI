@@ -403,33 +403,17 @@ export default function ListingDetailsClient({ params }) {
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="text-label-sm font-semibold text-secondary dark:text-slate-400 uppercase tracking-wider">Suggested Transformation</p>
-                  {cardMockups[cardIndex] === 'idle' && (
-                    <button 
-                      onClick={() => handleGenerateMockup(cardIndex)}
-                      className="w-full py-6 border-2 border-dashed border-primary/30 text-primary bg-primary/5 rounded-xl font-bold flex flex-col items-center justify-center gap-2 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group"
-                    >
-                      <span className="material-symbols-outlined text-3xl animate-pulse group-hover:scale-110 transition-transform">auto_awesome</span>
-                      <span className="text-label-md">Generate Photo Mockup</span>
-                    </button>
-                  )}
-                  {cardMockups[cardIndex] === 'generating' && (
-                    <div className="w-full h-48 border border-outline-variant dark:border-slate-800 bg-surface-container dark:bg-slate-900 rounded-xl flex flex-col items-center justify-center gap-3">
-                      <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-                      <span className="text-label-sm font-semibold text-secondary dark:text-slate-400 animate-pulse">AI is generating mockup...</span>
-                    </div>
-                  )}
-                  {cardMockups[cardIndex] === 'generated' && (
-                    <div className="relative rounded-lg overflow-hidden border border-outline-variant dark:border-slate-800 fade-in">
-                      <img alt={`${card.type} Transformation`} className="w-full h-48 object-cover" src={card.mockupImage}/>
-                      <button 
-                        onClick={() => handleGenerateMockup(cardIndex)}
-                        className="absolute top-2 right-2 bg-on-surface/80 hover:bg-on-surface text-surface p-2 rounded-full shadow transition-colors flex items-center justify-center"
-                        title="Regenerate"
-                      >
-                        <span className="material-symbols-outlined text-[16px]">refresh</span>
-                      </button>
-                    </div>
-                  )}
+                  <Link 
+                    href={`/ai-mockup?type=${
+                      card.type.toLowerCase() === 'cafe' ? 'coffee' : 
+                      card.type.toLowerCase() === 'restaurant' ? 'shabu' : 
+                      card.type.toLowerCase()
+                    }`}
+                    className="w-full py-6 border-2 border-dashed border-primary/30 text-primary bg-primary/5 rounded-xl font-bold flex flex-col items-center justify-center gap-2 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group text-center"
+                  >
+                    <span className="material-symbols-outlined text-3xl animate-pulse group-hover:scale-110 transition-transform">auto_awesome</span>
+                    <span className="text-label-md">Generate Photo Mockup</span>
+                  </Link>
                 </div>
               </div>
             ))}

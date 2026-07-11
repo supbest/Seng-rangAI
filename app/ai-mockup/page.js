@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import mockupsData from '../../data/mockups.json';
 
@@ -62,10 +62,25 @@ function getBudgetData(budget) {
 
 export default function AiMockup() {
   const [shopType, setShopType] = useState('coffee');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const type = params.get('type');
+      if (type && SHOP_TYPES.some((t) => t.key === type)) {
+        setShopType(type);
+      }
+    }
+  }, []);
   const [shopStyle, setShopStyle] = useState('minimal');
   const [budget, setBudget] = useState(400000);
   const [isGenerating, setIsGenerating] = useState(false);
-  const [showMockup, setShowMockup] = useState(true);
+  const [showMockup, setShowMockup] = useState(false);
+
+  useEffect(() => {
+    setShowMockup(false);
+  }, [shopType, shopStyle, budget]);
+
   const currentData = mockupsData[shopType];
   const budgetData = getBudgetData(budget);
 
@@ -198,22 +213,30 @@ export default function AiMockup() {
             </div>
 
             {/* After Card */}
-            <div className="relative rounded-2xl overflow-hidden shadow-sm group bg-surface-container-low dark:bg-slate-900 border border-outline-variant dark:border-slate-800/80">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm group bg-surface-container-low dark:bg-slate-900 border border-outline-variant dark:border-slate-800/80 flex flex-col h-[320px] sm:h-[360px] md:h-[420px]">
               <div className="absolute top-4 left-4 z-10 bg-primary/90 backdrop-blur-md text-white px-4 py-1 rounded-full font-label-md text-sm">After</div>
               
               {isGenerating ? (
-                <div className="h-[320px] w-full bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300 sm:h-[360px] md:h-[420px]">
+                <div className="flex-1 bg-surface-container dark:bg-slate-900 flex flex-col items-center justify-center gap-4 transition-all duration-300">
                   <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
                   <span className="text-body-md font-bold text-primary animate-pulse">AI is styling the space...</span>
                 </div>
+              ) : showMockup ? (
+                <img 
+                  className="flex-1 w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] fade-in" 
+                  alt="Simulated AI storefront design" 
+                  src={getMockupImage()} 
+                />
               ) : (
-                showMockup && (
-                  <img 
-                    className="h-[320px] w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] fade-in sm:h-[360px] md:h-[420px]" 
-                    alt="Simulated AI storefront design" 
-                    src={getMockupImage()} 
-                  />
-                )
+                <div className="flex-1 bg-surface-container-lowest dark:bg-slate-950 flex flex-col items-center justify-center p-6 text-center gap-3">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+                    <span className="material-symbols-outlined text-4xl animate-pulse">auto_awesome</span>
+                  </div>
+                  <h4 className="font-bold text-headline-sm text-on-surface dark:text-white">AI Mockup Ready</h4>
+                  <p className="text-body-sm text-secondary dark:text-slate-400 max-w-[280px]">
+                    Customize your shop type, style, and budget on the left, then click <b>Generate Mockup</b> to visualize.
+                  </p>
+                </div>
               )}
             </div>
           </div>
@@ -226,7 +249,7 @@ export default function AiMockup() {
                 <h3 className="font-headline-md text-headline-md font-bold text-slate-900 dark:text-white">Concept</h3>
               </div>
               <p className="font-body-md text-on-surface-variant dark:text-slate-300 leading-relaxed">
-                {currentData.concept}
+                {currentData.styles?.[shopStyle]?.concept || currentData.concept}
               </p>
             </div>
             
@@ -236,7 +259,7 @@ export default function AiMockup() {
                 <h3 className="font-headline-md text-headline-md font-bold text-slate-900 dark:text-white">Required Renovations</h3>
               </div>
               <ul className="space-y-3">
-                {currentData.improvements.map((improvement, index) => (
+                {(currentData.styles?.[shopStyle]?.improvements || currentData.improvements || []).map((improvement, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                     <span className="font-body-md text-on-surface-variant dark:text-slate-300">{improvement}</span>

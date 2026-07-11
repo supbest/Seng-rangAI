@@ -3,13 +3,36 @@
     "title": "Cafe",
     "tagClass": "bg-primary-fixed text-on-primary-fixed",
     "icon": "coffee",
-    "original": "/mockups/coffee/original.png",
-    "concept": "Minimalist style cafe with clear glass facade to increase spaciousness and modern feel. Suitable for working professionals and passersby. Styled with white tones and light oak wood to create a relaxing and clean atmosphere.",
-    "improvements": [
-      "Add storefront customer counter",
-      "Install custom ambient lighting and exterior signage",
-      "Optimize seating layout and interior walkways"
-    ],
+    "original": "/mockups/coffee/image7.jpg",
+    "styles": {
+      "minimal": {
+        "concept": "Bright and calming café using warm white tones, light oak wood, soft neutral furniture, and natural light. Designed to make the 45 sq.m space feel clean, open, and relaxing.",
+        "improvements": [
+          "Install a curved light-oak counter",
+          "Add warm ambient and pendant lighting",
+          "Use light-wood seating and bench furniture",
+          "Improve layout and customer walkways"
+        ]
+      },
+      "modern": {
+        "concept": "Contemporary urban café with dark wood, stone surfaces, black metal details, and warm lighting. Suitable for working professionals and casual social gatherings.",
+        "improvements": [
+          "Install a stone and timber service counter",
+          "Add feature ceiling and track lighting",
+          "Upgrade back-bar storage and display",
+          "Add modern seating and exterior signage"
+        ]
+      },
+      "luxury": {
+        "concept": "Premium café with marble finishes, brushed-gold details, warm dark tones, and comfortable upholstered chairs. Designed to create an elegant lounge-like atmosphere.",
+        "improvements": [
+          "Install a marble counter with gold accents",
+          "Add decorative and indirect lighting",
+          "Upgrade flooring and wall finishes",
+          "Add premium armchairs and branded signage"
+        ]
+      }
+    },
     "images": {
       "economy": {
         "minimal": "/mockups/coffee/cafe_eco_min.png",
@@ -17,9 +40,9 @@
         "luxury": "/mockups/coffee/cafe_eco_lux.png"
       },
       "moderate": {
-        "minimal": "/mockups/coffee/cafe_mod_min.png",
-        "modern": "/mockups/coffee/cafe_mod_mod.png",
-        "luxury": "/mockups/coffee/cafe_mod_lux.png"
+        "minimal": "/mockups/coffee/minimalAri.jpg",
+        "modern": "/mockups/coffee/modernAri.jpg",
+        "luxury": "/mockups/coffee/luxuryAri.jpg"
       },
       "premium": {
         "minimal": "/mockups/coffee/cafe_pre_min.png",
@@ -33,12 +56,32 @@
     "tagClass": "bg-secondary-fixed text-on-secondary-fixed",
     "icon": "ramen_dining",
     "original": "/mockups/shabu/original.png",
-    "concept": "Warm-styled Shabu-Shabu restaurant focusing on spacious seating for families and groups of friends. Excellent ventilation layout. Outfitted with wood paneling and warm orange lighting to enhance the cozy dining experience.",
-    "improvements": [
-      "Install local exhaust hoods and ventilation systems",
-      "Upgrade electrical capacity to support multiple induction cooktops",
-      "Arrange large dining tables and high-back sofa booths"
-    ],
+    "styles": {
+      "minimal": {
+        "concept": "Simple, clean Japanese-style Shabu with light wooden furniture, neutral fabrics, and warm recessed lights for a serene family dining experience.",
+        "improvements": [
+          "Install light wood induction tables and benches",
+          "Mount minimal bamboo partitions between tables",
+          "Set up standard individual pot ventilation system"
+        ]
+      },
+      "modern": {
+        "concept": "Hip and energetic modern Shabu featuring neon signs, dark gray tiles, industrial steel tables, and dynamic track lighting.",
+        "improvements": [
+          "Install neon accent walls and custom signage",
+          "Upgrade ventilation to high-performance exhaust hoods",
+          "Install digital touchscreen ordering tablets at tables"
+        ]
+      },
+      "luxury": {
+        "concept": "Premium private Shabu dining experience with dark stone finishes, golden trims, private VIP rooms, and automated service trays.",
+        "improvements": [
+          "Construct soundproof private VIP dining rooms",
+          "Install premium marble-top tables with integrated touch controls",
+          "Incorporate gold accent dividers and luxury cutlery cabinets"
+        ]
+      }
+    },
     "images": {
       "economy": {
         "minimal": "/mockups/shabu/shabu_eco_min.png",
@@ -62,12 +105,32 @@
     "tagClass": "bg-tertiary-fixed text-on-tertiary-fixed",
     "icon": "medical_services",
     "original": "/mockups/clinic/original.png",
-    "concept": "Clean, simple, and highly professional clinical design. Employs bright, eye-friendly ambient lighting. Properly partitions medical consultation rooms and comfortable patient waiting areas.",
-    "improvements": [
-      "Install soundproof partition walls for patient privacy",
-      "Integrate automated handwashing stations in treatment areas",
-      "Build wheelchair access ramps and wider sliding entry doors"
-    ],
+    "styles": {
+      "minimal": {
+        "concept": "Zen-like clinic focusing on warm wood, cream white colors, and soft lighting to reduce patient anxiety. Clear and spacious walkways.",
+        "improvements": [
+          "Add soft ambient recessed LED lighting",
+          "Place minimal wooden reception desks and clean seating",
+          "Set up comfortable lounge chairs in the lobby"
+        ]
+      },
+      "modern": {
+        "concept": "Sleek, futuristic medical clinic with blue LED accents, clean white panels, digital kiosks, and glass consultation rooms.",
+        "improvements": [
+          "Install digital check-in touchscreen kiosks",
+          "Add smart frosted-glass partition panels",
+          "Integrate medical-grade clean air filtration systems"
+        ]
+      },
+      "luxury": {
+        "concept": "High-end wellness clinic with gold fixtures, marble lobby, private recovery suites, and premium aromatherapy lounge.",
+        "improvements": [
+          "Add custom marble reception counter with gold trims",
+          "Set up VIP recovery suites with leather recliners",
+          "Install high-end dimmable chandelier lighting"
+        ]
+      }
+    },
     "images": {
       "economy": {
         "minimal": "/mockups/clinic/clinic-eco-min.png",
@@ -91,12 +154,32 @@
     "tagClass": "bg-primary-fixed text-on-primary-fixed",
     "icon": "checkroom",
     "original": "/mockups/clothing/original.png",
-    "concept": "Modern boutique clothing store design focusing on product accent lighting. Outfitted with full-length vanity mirrors and polished stainless steel racks to elevate the premium presentation of the apparel.",
-    "improvements": [
-      "Partition spacious fitting rooms equipped with full-length mirrors",
-      "Set up directional spotlight tracks to highlight signature displays",
-      "Establish checking/billing counters and backroom inventory storage"
-    ],
+    "styles": {
+      "minimal": {
+        "concept": "Minimalist fashion boutique with clean plaster walls, simple racks, and natural lighting. Focuses on giving garments maximum space.",
+        "improvements": [
+          "Install sleek wall-mounted clothing rails",
+          "Add single large oak display table",
+          "Mount frameless round mirrors in dressing area"
+        ]
+      },
+      "modern": {
+        "concept": "Industrial modern clothing store with exposed metal pipe racks, concrete floors, neon tags, and black steel frames.",
+        "improvements": [
+          "Add track spotlighting system and spotlight grids",
+          "Construct metal pipe and wire mesh display racks",
+          "Install digital checkout counter with matte-black finishes"
+        ]
+      },
+      "luxury": {
+        "concept": "High-end luxury boutique with marble flooring, gold metallic hangers, plush velvet fitting rooms, and private shopping lounges.",
+        "improvements": [
+          "Create luxury velvet-draped fitting rooms",
+          "Install gold-plated custom display racks and marble pillars",
+          "Add comfortable leather sofas and designer perfume displays"
+        ]
+      }
+    },
     "images": {
       "economy": {
         "minimal": "/mockups/clothing/clothing-eco-min.png",
@@ -120,12 +203,32 @@
     "tagClass": "bg-secondary-fixed text-on-secondary-fixed",
     "icon": "local_drink",
     "original": "/mockups/milk-tea/original.png",
-    "concept": "Compact milk tea shop design focused on fast service, bright menu visibility, and a clean grab-and-go customer flow. Suitable for transit areas, student zones, and high-footfall storefronts.",
-    "improvements": [
-      "Install drink preparation counter and sealing station",
-      "Add illuminated menu board and brand signage",
-      "Optimize queue space for quick pickup and delivery orders"
-    ],
+    "styles": {
+      "minimal": {
+        "concept": "Clean and tiny grab-and-go milk tea shop styled in cream and white tones. Hidden prep area to keep the counter clean.",
+        "improvements": [
+          "Set up compact white service counter",
+          "Mount minimal digital menu screen",
+          "Optimize pickup queue space for delivery riders"
+        ]
+      },
+      "modern": {
+        "concept": "Urban modern bubble tea bar with color-changing LED strips, stainless steel counters, and trendy street-style posters.",
+        "improvements": [
+          "Install RGB LED accent under-counter lights",
+          "Add stainless steel preparation counter and sinks",
+          "Set up modern self-service ordering touchscreen kiosk"
+        ]
+      },
+      "luxury": {
+        "concept": "Premium tea salon featuring marble tables, gold accents, comfortable sit-down booths, and elegant glass displays for organic tea leaves.",
+        "improvements": [
+          "Add marble-topped preparation bar and backlights",
+          "Install brass menu frames and premium glass display cabinets",
+          "Set up cozy seating booths with velvet cushions"
+        ]
+      }
+    },
     "images": {
       "economy": {
         "minimal": "/mockups/milk-tea/tea-eco-mod.png",
