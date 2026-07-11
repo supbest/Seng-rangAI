@@ -168,7 +168,7 @@
           { "label": "Security Deposit (3 Months)", "value": "฿105,000" },
           { "label": "Electricity/Water", "value": "Government Meter Rates" }
         ],
-        "totalInitial": "฿1,305,000",
+        "totalInitial": "฿140,000",
         "inclusions": [
           "Lease rights and customer base",
           "All coffee brewing and bakery equipment",
@@ -179,16 +179,16 @@
       "gallery": [
         {
           "alt": "Cafe seating",
-          "src": "/mockups/coffee/original-ari.png",
+          "src": "/mockups/coffee/image6.jpg",
           "main": true
         },
         {
           "alt": "Cozy coffee shop interior",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAo4qK3BQKmZzyWsFeAC4adc0CIi5xDs2Zgs5es80821_GTr0gktpgIWXv-c09OY6i8lBPesSjab_8pvloT8jkHyKbKKNuAIFbBlQOBh7LBz6Qyq4cxmjXZvV_m7GUOTtNxcAZQsaxPBYu6TVg8WloWxfL_tIZxvNadG2KgpTIuyQvLaMSQmgsyxxZ5yFzkQZ7wjbmoQbBRGZbyuoPF9NvxxfHGQ_Rg7XaoBTEeKTges2fmR8P41SKVUAJ03ZOcbJnIGCtdzdugjsWn"
+          "src": "/mockups/coffee/image5.jpg"
         },
         {
           "alt": "Professional espresso machine",
-          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAr9Wa--1iamaZLRlnNSBRcSB9WYx6AocAymWKPl8WJ9hoReSMXRSVp5PZ9BIWloMAyqKGXH7C7Nhpo8YOjx7cdNLtIF9qxoLn6j3Ys3ArA5WnSKJKdErabJDAmPevtJbbVSo445d18vIA6hwQLAkmcm045FIfT8Y8owsHz1YiW6dF_pI9cCaLza1mn6-JNe3w3Xl8tb6kM21Cwd8cELcArW7BkL0weYMghHrRupeNC9vjzpaqLLXrzW3HzrpomG8KGYFim17Bfu5WT"
+          "src": "/mockups/coffee/image4.jpg"
         },
         {
           "alt": "Modern cafe seating area",
@@ -201,7 +201,7 @@
         }
       ],
       "aiSummary": {
-        "score": 85,
+        "score": 92,
         "description": "This location is highly suitable for F&B businesses due to being in the Ari area with high purchasing power."
       },
       "broker": {
